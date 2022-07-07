@@ -2,48 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hamburger : MonoBehaviour, IHamburger
+public class Hamburger : MonoBehaviour
 {
-    public List<Ingredient> ingredients = new List<Ingredient>();
+    public List<IngredientType> stackedIngredients = new List<IngredientType>();
 
-    private Rigidbody rigid;
+    public float totalHeight = 0.005f;
 
-    public float nextStackPosition = 0.01f;
+    public BoxCollider triggerCollider;
 
-    private void Start()
+    public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
     {
-        rigid = GetComponent<Rigidbody>();
-    }
+        stackedIngredients.Add(ingredientType);
+        GameObject newMeshObject = Instantiate(meshObject, transform);
+        newMeshObject.transform.localPosition = new Vector3(0, totalHeight, 0);
+        newMeshObject.transform.localRotation = Quaternion.identity;
+        totalHeight += height;
 
-    public void StackIngredient(Ingredient ingredient) 
-    {
-        ingredients.Add(ingredient);
+        triggerCollider.size = new Vector3(triggerCollider.size.x,
+                                           triggerCollider.size.y + height,
+                                           triggerCollider.size.z);
+        triggerCollider.center = new Vector3(triggerCollider.center.x,
+                                             triggerCollider.center.y + (height / 2),
+                                             triggerCollider.center.z);
     }
-
-    public void NextTopPosition(float f)
-    {
-        nextStackPosition += f;
-    }
-
-    public float GetTopPosition()
-    {
-        return nextStackPosition;
-    }
-
-    public int GetIngredientLength()
-    {
-        return ingredients.Count;
-    }
-
-    public Rigidbody GetRigidbody()
-    {
-        return rigid;
-    }
-
-    public Hamburger GetHamburger()
-    {
-        return this;
-    }
-
-    
 }
