@@ -157,4 +157,9 @@ public class OVRGrabbable : MonoBehaviour
             m_grabbedBy.ForceRelease(this);
         }
     }
+
+    public void SetOffhandGrab(bool allowed)
+    {
+        m_allowOffhandGrab = allowed;
+    }
 }
