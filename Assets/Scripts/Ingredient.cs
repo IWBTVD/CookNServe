@@ -34,7 +34,7 @@ public class Ingredient : MonoBehaviour, IHamburger
             //햄버거 객체로부터 컴포넌트 가져옴
             Hamburger hamburger = other.GetComponent<IHamburger>().GetHamburger();
             //햄버거에서 재료 쌓아올렸을 때 메소드 호출
-            hamburger.StackIngredient(this);
+            other.GetComponent<IHamburger>().StackIngredient(this);
 
             //자식 객체로 등록하고 위치를 햄버거 객체의 위로 올림
             transform.parent = other.transform;
@@ -62,5 +62,10 @@ public class Ingredient : MonoBehaviour, IHamburger
     public Hamburger GetHamburger()
     {
         return transform.parent.GetComponent<Hamburger>();
+    }
+
+    public void StackIngredient(Ingredient ingredient)
+    {
+        transform.parent.GetComponent<Hamburger>().StackIngredient(ingredient);
     }
 }

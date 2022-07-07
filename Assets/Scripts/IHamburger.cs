@@ -5,4 +5,6 @@ using UnityEngine;
 public interface IHamburger
 {
     public Hamburger GetHamburger();
+    public void StackIngredient(Ingredient ingredient);
 }
+
