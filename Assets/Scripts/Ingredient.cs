@@ -68,7 +68,7 @@ public class Ingredient : MonoBehaviour
 
             isUsed = true;
             meshObject.SetActive(false);
-            Destroy(gameObject);
+            Destroy(gameObject, 2f);
         }
     }
 }

@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientType: 3
-  height: 0.01
+  height: 0.008
   isUsed: 0
   meshObject: {fileID: 5579010723877700123}
 --- !u!1001 &4117623686884149190
