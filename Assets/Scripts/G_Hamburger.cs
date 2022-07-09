@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Hamburger : MonoBehaviour
+public class G_Hamburger : MonoBehaviour
 {
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
