@@ -1,9 +1,10 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class G_Ingredient : MonoBehaviour
 {
+    //한글 주석 왜깨짐 ㅡㅡ
     public IngredientType ingredientType;
     //public bool isUsed = false;
 

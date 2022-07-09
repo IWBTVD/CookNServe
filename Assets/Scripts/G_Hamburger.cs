@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class G_Hamburger : MonoBehaviour
 {
+    //내 주석들 돌려내!!
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
     public float totalHeight = 0.005f;

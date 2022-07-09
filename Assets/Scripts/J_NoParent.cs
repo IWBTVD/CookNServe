@@ -16,6 +16,7 @@ public class J_NoParent : MonoBehaviour
     {
         RemoveParent();
     }
+
     void RemoveParent(){
         if(ovrGrabbable.isGrabbed){
             if(thisObject.GetComponent<Transform>().parent !=null){
