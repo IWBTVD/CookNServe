@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8507623888016470694
+--- !u!1 &2449762265215293185
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,11 +8,502 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8507623888016470698}
-  - component: {fileID: 8507623888016470699}
-  - component: {fileID: 8507623888016470692}
-  - component: {fileID: 8507623888016470693}
-  - component: {fileID: 8507623888016470697}
+  - component: {fileID: 2449762265215293184}
+  - component: {fileID: 2449762265215293181}
+  - component: {fileID: 2449762265215293186}
+  - component: {fileID: 2449762265215293187}
+  m_Layer: 0
+  m_Name: Arugula Leaf A
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762265215293184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265215293185}
+  m_LocalRotation: {x: 0.000000021147159, y: -0.25255987, z: -0.0000000055198712, w: 0.96758133}
+  m_LocalPosition: {x: 0.0335, y: -0, z: -0.0092}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -29.258, z: 0}
+--- !u!33 &2449762265215293181
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265215293185}
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!23 &2449762265215293186
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265215293185}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762265215293187
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265215293185}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!1 &2449762265327766548
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762265327766551}
+  - component: {fileID: 2449762265327766544}
+  - component: {fileID: 2449762265327766545}
+  - component: {fileID: 2449762265327766550}
+  m_Layer: 0
+  m_Name: Arugula Leaf A (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762265327766551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265327766548}
+  m_LocalRotation: {x: 0.000000021092779, y: 0.26190862, z: 0.000000005724193, w: 0.9650927}
+  m_LocalPosition: {x: 0.005, y: 0.0046, z: -0.0219}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 30.367, z: 0}
+--- !u!33 &2449762265327766544
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265327766548}
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!23 &2449762265327766545
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265327766548}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762265327766550
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265327766548}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!1 &2449762265349079766
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762265349079761}
+  - component: {fileID: 2449762265349079762}
+  - component: {fileID: 2449762265349079763}
+  - component: {fileID: 2449762265349079760}
+  m_Layer: 0
+  m_Name: Arugula Leaf B (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762265349079761
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265349079766}
+  m_LocalRotation: {x: 0.000000019627842, y: -0.439862, z: -0.00000000961349, w: 0.8980654}
+  m_LocalPosition: {x: 0.0024, y: 0.0003, z: -0.0282}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: -52.19, z: 0}
+--- !u!33 &2449762265349079762
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265349079766}
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!23 &2449762265349079763
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265349079766}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762265349079760
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762265349079766}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!1 &2449762266176753711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266176753710}
+  - component: {fileID: 2449762266176753707}
+  - component: {fileID: 2449762266176753704}
+  - component: {fileID: 2449762266176753705}
+  m_Layer: 0
+  m_Name: Arugula Leaf A (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762266176753710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266176753711}
+  m_LocalRotation: {x: -0.000000016388203, y: 0.6616217, z: 0.000000014460196, w: -0.7498379}
+  m_LocalPosition: {x: 0.0224, y: 0.0128, z: 0.0083}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 277.153, z: 0}
+--- !u!33 &2449762266176753707
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266176753711}
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!23 &2449762266176753704
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266176753711}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762266176753705
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266176753711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!1 &2449762266180840481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266180840477}
+  - component: {fileID: 2449762266180840482}
+  - component: {fileID: 2449762266180840483}
+  - component: {fileID: 2449762266180840480}
+  m_Layer: 0
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762266180840477
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266180840481}
+  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 2449762266558081611}
+  - {fileID: 2449762265215293184}
+  - {fileID: 2449762267263791865}
+  - {fileID: 2449762266635798933}
+  - {fileID: 2449762265349079761}
+  - {fileID: 2449762267040724134}
+  - {fileID: 2449762265327766551}
+  - {fileID: 2449762267100448348}
+  - {fileID: 2449762266176753710}
+  - {fileID: 2449762266604246857}
+  m_Father: {fileID: 2449762266526192705}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2449762266180840482
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266180840481}
+  m_Mesh: {fileID: 150815944095385738, guid: 41c50254705b424f84f1d33f15672d7c, type: 3}
+--- !u!23 &2449762266180840483
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266180840481}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762266180840480
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266180840481}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 150815944095385738, guid: 41c50254705b424f84f1d33f15672d7c, type: 3}
+--- !u!1 &2449762266526192715
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266526192705}
+  - component: {fileID: 2449762266526192710}
+  - component: {fileID: 2449762266526192711}
+  - component: {fileID: 2449762266526192708}
+  - component: {fileID: 2449762266526192709}
+  - component: {fileID: 2449762266526192714}
   m_Layer: 0
   m_Name: Cabbage
   m_TagString: Ingredient
@@ -20,28 +511,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8507623888016470698
+--- !u!4 &2449762266526192705
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507623888016470694}
+  m_GameObject: {fileID: 2449762266526192715}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 7.456, y: 0.499, z: 1.0880002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8083925040575293173}
+  - {fileID: 2449762266180840477}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!64 &8507623888016470699
+--- !u!64 &2449762266526192710
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507623888016470694}
+  m_GameObject: {fileID: 2449762266526192715}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
@@ -49,13 +540,13 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 150815944095385738, guid: 41c50254705b424f84f1d33f15672d7c, type: 3}
---- !u!54 &8507623888016470692
+--- !u!54 &2449762266526192711
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507623888016470694}
+  m_GameObject: {fileID: 2449762266526192715}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -65,13 +556,13 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8507623888016470693
+--- !u!114 &2449762266526192708
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507623888016470694}
+  m_GameObject: {fileID: 2449762266526192715}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
@@ -82,14 +573,14 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 5301247787653489901}
---- !u!114 &8507623888016470697
+  - {fileID: 2449762266180840480}
+--- !u!114 &2449762266526192709
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8507623888016470694}
+  m_GameObject: {fileID: 2449762266526192715}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3089ab926305ac4ea189e62873cd3b3, type: 3}
@@ -98,738 +589,593 @@ MonoBehaviour:
   ingredientType: 0
   height: 0.005
   isUsed: 0
-  meshObject: {fileID: 8891247313592286287}
---- !u!1001 &1015717821293760489
-PrefabInstance:
+  meshObject: {fileID: 2449762266180840481}
+--- !u!114 &2449762266526192714
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0257
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0179
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9366349
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000020470809
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.35030708
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000007656205
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 41.012
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7637728487931863546, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf B
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
---- !u!1001 &1670467052972483243
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0335
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0092
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.96758133
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021147159
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.25255987
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.0000000055198712
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -29.258
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105187010686739850, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf A
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
---- !u!1001 &2235201575157242890
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 905540374664384481, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 905540374664384481, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0318
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0093
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0032
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9990787
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021835591
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.042917076
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -9.380027e-10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -4.919
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3376390185925611032, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
---- !u!1001 &5212154095034154697
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0024
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0003
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0282
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8980654
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000019627842
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.439862
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.00000000961349
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -52.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7637728487931863546, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf B (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
---- !u!1001 &5466174109869068832
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0046
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0219
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9650927
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021092779
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.26190862
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000005724193
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 30.367
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105187010686739850, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf A (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
---- !u!1001 &7343447511546420181
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0224
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0128
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0083
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7498379
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.000000016388203
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6616217
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000014460196
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 277.153
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105187010686739850, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf A (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
---- !u!1001 &7763069395537625050
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6447660942895076706, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0162
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0082
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0211
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.32166958
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.0000000070303128
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.94685197
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000020694104
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 217.528
-      objectReference: {fileID: 0}
-    - target: {fileID: 8437441077334228784, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9105187010686739850, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf A (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bf28d2398534b50ba0e05700b044977, type: 3}
---- !u!1001 &8058642469013722741
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 905540374664384481, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 905540374664384481, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0309
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0047
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0234
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.84552187
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000018479474
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5339408
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.000000011669647
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -64.544
-      objectReference: {fileID: 0}
-    - target: {fileID: 2706813256139691170, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3376390185925611032, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 80869c1ff48e4f88bfd0af8bf1a8e71f, type: 3}
---- !u!1001 &8189716760375123649
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0016
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0046
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.0429
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.63851947
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000013955291
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.7696057
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.000000016820259
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 100.637
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7637728487931863546, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf B (2)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
---- !u!1001 &8507623887585009942
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8507623888016470698}
-    m_Modifications:
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021855694
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 969725873826667865, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_Name
-      value: Mesh
-      objectReference: {fileID: 0}
-    - target: {fileID: 1618433817362447500, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575927835071907323, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4575927835071907323, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
---- !u!1 &8891247313592286287 stripped
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266526192715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8358244e2f7eae4bba0a59e60188b55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObject: {fileID: 2449762266526192715}
+--- !u!1 &2449762266558081608
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 969725873826667865, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-  m_PrefabInstance: {fileID: 8507623887585009942}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &8083925040575293173 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 450069862463686627, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-  m_PrefabInstance: {fileID: 8507623887585009942}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &5301247787653489901 stripped
-MeshCollider:
-  m_CorrespondingSourceObject: {fileID: 4575927835071907323, guid: e7c6b11b69214f36b49bf9a424f4adbb, type: 3}
-  m_PrefabInstance: {fileID: 8507623887585009942}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &8610485330420334688
-PrefabInstance:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 8083925040575293173}
-    m_Modifications:
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4930240161389808376, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.0271
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0049
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0047
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.99789613
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000021809713
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.0648336
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.0000000014169819
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 7.435
-      objectReference: {fileID: 0}
-    - target: {fileID: 7112724482904505152, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7637728487931863546, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
-      propertyPath: m_Name
-      value: Arugula Leaf B (3)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5bbb2b91932c4930986d8b90d9de154a, type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266558081611}
+  - component: {fileID: 2449762266558081604}
+  - component: {fileID: 2449762266558081605}
+  - component: {fileID: 2449762266558081610}
+  m_Layer: 0
+  m_Name: Arugula Leaf B
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762266558081611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266558081608}
+  m_LocalRotation: {x: 0.000000020470809, y: 0.35030708, z: 0.000000007656205, w: 0.9366349}
+  m_LocalPosition: {x: -0.0257, y: 0, z: 0.0179}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 41.012, z: 0}
+--- !u!33 &2449762266558081604
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266558081608}
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!23 &2449762266558081605
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266558081608}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762266558081610
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266558081608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!1 &2449762266604246862
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266604246857}
+  - component: {fileID: 2449762266604246858}
+  - component: {fileID: 2449762266604246859}
+  - component: {fileID: 2449762266604246856}
+  m_Layer: 0
+  m_Name: Arugula Leaf B (3)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762266604246857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266604246862}
+  m_LocalRotation: {x: 0.000000021809713, y: 0.0648336, z: 0.0000000014169819, w: 0.99789613}
+  m_LocalPosition: {x: -0.0271, y: 0.0049, z: -0.0047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 7.435, z: 0}
+--- !u!33 &2449762266604246858
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266604246862}
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!23 &2449762266604246859
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266604246862}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762266604246856
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266604246862}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!1 &2449762266635798938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762266635798933}
+  - component: {fileID: 2449762266635798934}
+  - component: {fileID: 2449762266635798935}
+  - component: {fileID: 2449762266635798932}
+  m_Layer: 0
+  m_Name: Arugula Leaf A (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762266635798933
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266635798938}
+  m_LocalRotation: {x: -0.0000000070303128, y: 0.94685197, z: 0.000000020694104, w: -0.32166958}
+  m_LocalPosition: {x: 0.0162, y: 0.0082, z: 0.0211}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 217.528, z: 0}
+--- !u!33 &2449762266635798934
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266635798938}
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!23 &2449762266635798935
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266635798938}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762266635798932
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266635798938}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2140451642015506262, guid: 4d11798fa22d408bba439d69247aedd1, type: 3}
+--- !u!1 &2449762267040724135
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762267040724134}
+  - component: {fileID: 2449762267040724131}
+  - component: {fileID: 2449762267040724128}
+  - component: {fileID: 2449762267040724129}
+  m_Layer: 0
+  m_Name: Arugula Leaf B (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762267040724134
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267040724135}
+  m_LocalRotation: {x: 0.000000013955291, y: 0.7696057, z: 0.000000016820259, w: 0.63851947}
+  m_LocalPosition: {x: -0.0016, y: 0.0046, z: 0.0429}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 100.637, z: 0}
+--- !u!33 &2449762267040724131
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267040724135}
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!23 &2449762267040724128
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267040724135}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762267040724129
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267040724135}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -3846479097360337516, guid: ab75f230a6b84e13b2f42d1d8b5074d7, type: 3}
+--- !u!1 &2449762267100448349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762267100448348}
+  - component: {fileID: 2449762267100448345}
+  - component: {fileID: 2449762267100448350}
+  - component: {fileID: 2449762267100448351}
+  m_Layer: 0
+  m_Name: Arugula Leaf (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762267100448348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267100448349}
+  m_LocalRotation: {x: 0.000000021835591, y: -0.042917076, z: -9.380027e-10, w: 0.9990787}
+  m_LocalPosition: {x: 0.0318, y: 0.0093, z: -0.0032}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: -4.919, z: 0}
+--- !u!33 &2449762267100448345
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267100448349}
+  m_Mesh: {fileID: 6351185348004111005, guid: 733042e692b84f159faa91c4b0b11213, type: 3}
+--- !u!23 &2449762267100448350
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267100448349}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762267100448351
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267100448349}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6351185348004111005, guid: 733042e692b84f159faa91c4b0b11213, type: 3}
+--- !u!1 &2449762267263791870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2449762267263791865}
+  - component: {fileID: 2449762267263791866}
+  - component: {fileID: 2449762267263791867}
+  - component: {fileID: 2449762267263791864}
+  m_Layer: 0
+  m_Name: Arugula Leaf
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2449762267263791865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267263791870}
+  m_LocalRotation: {x: 0.000000018479474, y: -0.5339408, z: -0.000000011669647, w: 0.84552187}
+  m_LocalPosition: {x: 0.0309, y: 0.0047, z: 0.0234}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2449762266180840477}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: -64.544, z: 0}
+--- !u!33 &2449762267263791866
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267263791870}
+  m_Mesh: {fileID: 6351185348004111005, guid: 733042e692b84f159faa91c4b0b11213, type: 3}
+--- !u!23 &2449762267263791867
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267263791870}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 175ccf1167404c1f8c4fd65533dc589c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2449762267263791864
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762267263791870}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6351185348004111005, guid: 733042e692b84f159faa91c4b0b11213, type: 3}
