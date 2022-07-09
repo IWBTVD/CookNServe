@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Hamburger
   - Ingredient
+  - Fries
   layers:
   - Default
   - TransparentFX

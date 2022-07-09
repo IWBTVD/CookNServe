@@ -5,11 +5,14 @@ using UnityEngine;
 public class Hamburger : MonoBehaviour
 {
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
-
+    
     public float totalHeight = 0.005f;
-
+    public IngredientSound ingredientSound;
     public BoxCollider triggerCollider;
 
+    private void Start() {
+        ingredientSound = GetComponent<IngredientSound>();
+    }
     public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
     {
         stackedIngredients.Add(ingredientType);
@@ -24,5 +27,13 @@ public class Hamburger : MonoBehaviour
         triggerCollider.center = new Vector3(triggerCollider.center.x,
                                              triggerCollider.center.y + (height / 2),
                                              triggerCollider.center.z);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Ingredient" )
+        {
+           ingredientSound.playSound();
+        }
     }
 }
