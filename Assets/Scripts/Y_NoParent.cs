@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class J_NoParent : MonoBehaviour
+public class Y_NoParent : MonoBehaviour
 {
     private OVRGrabbable ovrGrabbable;
     public GameObject thisObject;

@@ -8,11 +8,11 @@ public class G_Hamburger : MonoBehaviour
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
     public float totalHeight = 0.005f;
-    public IngredientSound ingredientSound;
+    public Y_IngredientSound ingredientSound;
     public BoxCollider triggerCollider;
 
     private void Start() {
-        ingredientSound = GetComponent<IngredientSound>();
+        ingredientSound = GetComponent<Y_IngredientSound>();
     }
     public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
     {
