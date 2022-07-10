@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Y_SourceDelet : MonoBehaviour
+public class Y_SourceDelete : MonoBehaviour
 {
     // Start is called before the first frame update
     private void OnCollisionEnter(Collision other) {
-        if(other.gameObject.tag == "Wall"){
+        if(other.gameObject.tag != "Ketchup")
             Destroy(gameObject);
-        }
     }
 }

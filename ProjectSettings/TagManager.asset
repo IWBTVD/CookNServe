@@ -8,6 +8,7 @@ TagManager:
   - Ingredient
   - Fries
   - Wall
+  - Ketchup
   layers:
   - Default
   - TransparentFX

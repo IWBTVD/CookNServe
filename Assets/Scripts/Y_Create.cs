@@ -14,10 +14,16 @@ public class Y_Create : MonoBehaviour
         CreateFood();
     }
     void CreateFood(){
-        if(transform.childCount < numOfFood){
-               GameObject stuff = Instantiate(food);
-               stuff.transform.position = factory.transform.position;
-               stuff.transform.parent = thisObject.transform;
-        }  
+        Invoke("DoCreate", 2f);
+    }
+
+    public void DoCreate()
+    {
+        if (transform.childCount < numOfFood)
+        {
+            GameObject stuff = Instantiate(food);
+            stuff.transform.position = factory.transform.position;
+            stuff.transform.parent = thisObject.transform;
+        }
     }
 }

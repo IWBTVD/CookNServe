@@ -7,8 +7,8 @@ public class Y_Source : MonoBehaviour
     // Start is called before the first frame update
     public GameObject source;
     public GameObject sourceOutPos;
-    public float sourceSpped;
-    public float createSpped;
+    public float sourceSpeed;
+    public float createSpeed;
 
     private OVRGrabbable ovrGrabbable;
 
@@ -36,9 +36,9 @@ public class Y_Source : MonoBehaviour
         GameObject intantSource = Instantiate(source);
         intantSource.transform.position = sourceOutPos.transform.position;
         Rigidbody sourceRigid = intantSource.GetComponent<Rigidbody>();
-        sourceRigid.velocity = sourceOutPos.transform.forward * sourceSpped;
+        sourceRigid.velocity = sourceOutPos.transform.forward * sourceSpeed;
 
-        yield return createSpped;
+        yield return new WaitForSeconds(createSpeed);
     }
 
 }
