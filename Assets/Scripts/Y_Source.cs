@@ -8,6 +8,7 @@ public class Y_Source : MonoBehaviour
     public GameObject source;
     public GameObject sourceOutPos;
     public float sourceSpped;
+    public float createSpped;
 
     private OVRGrabbable ovrGrabbable;
 
@@ -20,20 +21,24 @@ public class Y_Source : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDown){
-            Shot();
+        if(ovrGrabbable.isGrabbed){
+            Use();
         }
     }
     void GetInput(){
         isDown = OVRInput.Get(OVRInput.Button.One);
     }
-    void Shot(){
+    
+    void Use(){
+        StartCoroutine("Shot");
+    }
+    IEnumerator Shot(){
         GameObject intantSource = Instantiate(source);
         intantSource.transform.position = sourceOutPos.transform.position;
         Rigidbody sourceRigid = intantSource.GetComponent<Rigidbody>();
         sourceRigid.velocity = sourceOutPos.transform.forward * sourceSpped;
 
-
+        yield return createSpped;
     }
-    
+
 }

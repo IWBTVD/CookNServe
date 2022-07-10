@@ -68,7 +68,8 @@ public class G_Ingredient : MonoBehaviour
             hamburger.StackIngredient(meshObject, height, ingredientType);
             isUsed = true;
             meshObject.SetActive(false);
-            Destroy(gameObject, 2f);
+            Destroy(gameObject, 2f);    
         }
+        
     }
 }
