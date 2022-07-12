@@ -5,7 +5,6 @@ using UnityEngine;
 public class Y_NoParent : MonoBehaviour
 {
     private OVRGrabbable ovrGrabbable;
-    public GameObject thisObject;
     void Start()
     {
         ovrGrabbable = GetComponent<OVRGrabbable>();
@@ -14,13 +13,13 @@ public class Y_NoParent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RemoveParent();
+        //RemoveParent();
     }
 
     void RemoveParent(){
         if(ovrGrabbable.isGrabbed){
-            if(thisObject.GetComponent<Transform>().parent !=null){
-                    thisObject.GetComponent<Transform>().parent = null;
+            if(transform.parent !=null){
+                    transform.parent = null;
             } 
         }
     }

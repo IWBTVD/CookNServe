@@ -13,6 +13,7 @@ public class Y_Create : MonoBehaviour
     {  
         CreateFood();
     }
+
     void CreateFood(){
         Invoke("DoCreate", 2f);
     }
