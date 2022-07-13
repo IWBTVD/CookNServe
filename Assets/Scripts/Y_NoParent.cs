@@ -9,6 +9,7 @@ public class Y_NoParent : MonoBehaviour
     void Start()
     {
         ovrGrabbable = GetComponent<OVRGrabbable>();
+         rigid = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -19,10 +20,13 @@ public class Y_NoParent : MonoBehaviour
 
     void RemoveParent(){
         if(ovrGrabbable.isGrabbed){
-            if(transform.parent !=null){
-                    transform.parent = null;
+            if(transform.parent){
+                    transform.SetParent(null);
                     rigid.isKinematic = false;
-            } 
+            }
+            else{
+                return;
+            }
         }
     }
 }
