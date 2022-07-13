@@ -5,6 +5,7 @@ using UnityEngine;
 public class Y_NoParent : MonoBehaviour
 {
     private OVRGrabbable ovrGrabbable;
+    private Rigidbody rigid;
     void Start()
     {
         ovrGrabbable = GetComponent<OVRGrabbable>();
@@ -13,13 +14,14 @@ public class Y_NoParent : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //RemoveParent();
+        RemoveParent();
     }
 
     void RemoveParent(){
         if(ovrGrabbable.isGrabbed){
             if(transform.parent !=null){
                     transform.parent = null;
+                    rigid.isKinematic = false;
             } 
         }
     }
