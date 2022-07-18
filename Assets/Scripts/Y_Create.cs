@@ -11,11 +11,7 @@ public class Y_Create : MonoBehaviour
     public int numOfFood;
     void Update()
     {  
-        CreateFood();
-    }
-
-    void CreateFood(){
-        Invoke("DoCreate", 2f);
+        DoCreate();
     }
 
     public void DoCreate()
