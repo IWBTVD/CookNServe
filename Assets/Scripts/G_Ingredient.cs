@@ -36,7 +36,7 @@ public class G_Ingredient : MonoBehaviour
             isGrabbed = true;
             triggerCollider.enabled = false;
         }
-        //????? ??????? ??????????, ??????? ???
+        //if grabb started, it run once
         if(ovrGrabbable.isGrabbed != isGrabbed)
         {
             isGrabbed = false;

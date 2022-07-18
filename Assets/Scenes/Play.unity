@@ -9740,6 +9740,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1000936436, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: Mute
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000936436, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_Volume
+      value: 0.155
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000936436, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2033300073, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
