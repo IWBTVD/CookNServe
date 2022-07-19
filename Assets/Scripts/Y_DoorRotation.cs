@@ -9,7 +9,7 @@ public class Y_DoorRotation : MonoBehaviour
     private bool isOpen = false;
     private bool isClosed = false;
 
-
+    
     public Animator doorAnimator;
     private float timer;
     private float closeTime = 3.0f;
@@ -31,27 +31,47 @@ public class Y_DoorRotation : MonoBehaviour
                 doorAnimator.SetBool("isOpen", isOpen);
             }
         }
+        
     }
 
     private void OnCollisionEnter(Collision other) {
 
         if(other.gameObject.tag == "Player"){
             //doRatation();
-            isOpen = true;
-            doorAnimator.SetBool("isOpen", isOpen);
+            Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - this.transform.position, this.transform.up);
+            Debug.Log(targetRotation);
+            if(targetRotation.x > 0){
+                isOpen = true;
+                doorAnimator.SetBool("isOpen", isOpen);
+                doorAnimator.SetFloat("move", 1.0f);
+            }
+            if(targetRotation.x < 0){
+                isOpen = true;
+                doorAnimator.SetBool("isOpen", isOpen);
+                doorAnimator.SetFloat("move", -1.0f);
+            }
+            
         }
+    
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            isOpen = true;
-            doorAnimator.SetBool("isOpen", isOpen);
+            Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - this.transform.position, this.transform.up);
+            Debug.Log(targetRotation);
+            if(targetRotation.x > 0){
+                isOpen = true;
+                doorAnimator.SetBool("isOpen", isOpen);
+                doorAnimator.SetFloat("move", 1.0f);
+            }
+            if(targetRotation.x < 0){
+                isOpen = true;
+                doorAnimator.SetBool("isOpen", isOpen);
+                doorAnimator.SetFloat("move", -1.0f);
+            }
         }
     }
 
-    private void doRatation(){
-        doorAxis.localRotation = new Quaternion(0, openSpeed * 2f * Time.deltaTime, 0, 0);
-    }
 }
