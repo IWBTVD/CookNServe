@@ -208,7 +208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8358244e2f7eae4bba0a59e60188b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisObject: {fileID: 9123224188755346574}
 --- !u!1 &9123224188929288352
 GameObject:
   m_ObjectHideFlags: 0
@@ -413,6 +412,7 @@ GameObject:
   - component: {fileID: 9123224189564778961}
   - component: {fileID: 9123224189564778960}
   - component: {fileID: 9123224189564778963}
+  - component: {fileID: 5881343062338634624}
   m_Layer: 0
   m_Name: Mesh
   m_TagString: Untagged
@@ -503,6 +503,26 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.006, z: 0.1}
   m_Center: {x: 0, y: 0.003, z: 0}
+--- !u!114 &5881343062338634624
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9123224189564778962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c28d8c53a56eaa4a9f0916915f1ae4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshfilters:
+  - {fileID: 9123224190419236501}
+  - {fileID: 9123224188570873216}
+  - {fileID: 9123224189773205313}
+  - {fileID: 9123224189718412126}
+  - {fileID: 9123224188929288364}
+  - {fileID: 9123224189291964902}
+  - {fileID: 9123224189657443964}
 --- !u!1 &9123224189657443952
 GameObject:
   m_ObjectHideFlags: 0

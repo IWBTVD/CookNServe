@@ -20,4 +20,12 @@ public class RemovableMeshFilter : MonoBehaviour
     {
         
     }
+
+    public void RemoveMeshFilter()
+    {
+        foreach (var mesh in meshfilters)
+        {
+            mesh.mesh = null;
+        }
+    }
 }

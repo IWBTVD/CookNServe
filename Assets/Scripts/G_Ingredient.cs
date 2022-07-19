@@ -19,7 +19,8 @@ public class G_Ingredient : MonoBehaviour
     private float timer;
     private float stackableTime = 0.5f;
     private bool isStackable = false;
-    private bool isGrabbed = false;   //????? ????????? true
+    private bool isGrabbed = false;   //grabbable.isGrabbed보다 한프레임 늦게 켜지고 꺼짐
+
 
     private void Start()
     {
@@ -29,22 +30,22 @@ public class G_Ingredient : MonoBehaviour
 
     private void Update()
     {
-        //??????????? ????????
+        
         if (ovrGrabbable.isGrabbed)
         {
             isStackable = false;
             isGrabbed = true;
             triggerCollider.enabled = false;
         }
-        //if grabb started, it run once
-        if(ovrGrabbable.isGrabbed != isGrabbed)
+        //잡는 즉시 한번만 실행
+        if (ovrGrabbable.isGrabbed != isGrabbed)
         {
             isGrabbed = false;
             isStackable = true;
             timer = 0f;
         }
 
-        //????? ???? ?? 0.5???? ????? ?????? ????? ?? ???? ?????? ???????
+        //손에서 놓은 후 0.5초동안 그릇에 닿으면 쌓아짐
         if(isStackable)
         {
             timer += Time.deltaTime;
@@ -67,7 +68,7 @@ public class G_Ingredient : MonoBehaviour
             G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
             hamburger.StackIngredient(meshObject, height, ingredientType);
             isUsed = true;
-            meshObject.SetActive(false);
+            meshObject.GetComponent<RemovableMeshFilter>().RemoveMeshFilter();
             Destroy(gameObject, 2f);    
         }
         
