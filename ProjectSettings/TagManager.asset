@@ -9,6 +9,7 @@ TagManager:
   - Fries
   - Wall
   - Ketchup
+  - Customer
   layers:
   - Default
   - TransparentFX

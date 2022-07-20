@@ -11,13 +11,13 @@ public class Y_BigDoor : MonoBehaviour
     }
 
     private void OnTriggerEnter(Collider other) {
-        if(other.tag == "Player" || other.tag == "customer"){
+        if(other.tag == "Player" || other.tag == "Customer"){
             animator.SetBool("isOpen",true);
         }
     }
 
     private void OnTriggerExit(Collider other) {
-        if(other.tag == "Player" || other.tag == "customer"){
+        if(other.tag == "Player" || other.tag == "Customer"){
             animator.SetBool("isOpen",false);
         }
     }
