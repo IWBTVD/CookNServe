@@ -1,4 +1,4 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -43,12 +43,12 @@ public class Y_DoorRotation : MonoBehaviour
             if(targetRotation.x > 0){
                 isOpen = true;
                 doorAnimator.SetBool("isOpen", isOpen);
-                doorAnimator.SetFloat("move", 1.0f);
+                doorAnimator.SetFloat("Move", 1.0f);
             }
             if(targetRotation.x < 0){
                 isOpen = true;
                 doorAnimator.SetBool("isOpen", isOpen);
-                doorAnimator.SetFloat("move", -1.0f);
+                doorAnimator.SetFloat("Move", -1.0f);
             }
             
         }
@@ -64,12 +64,14 @@ public class Y_DoorRotation : MonoBehaviour
             if(targetRotation.x > 0){
                 isOpen = true;
                 doorAnimator.SetBool("isOpen", isOpen);
-                doorAnimator.SetFloat("move", 1.0f);
+                doorAnimator.SetFloat("Move", 1.0f);
+                Debug.Log("Foward");
             }
             if(targetRotation.x < 0){
                 isOpen = true;
                 doorAnimator.SetBool("isOpen", isOpen);
-                doorAnimator.SetFloat("move", -1.0f);
+                doorAnimator.SetFloat("Move", -1.0f);
+                Debug.Log("Backward");
             }
         }
     }
