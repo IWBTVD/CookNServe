@@ -33,11 +33,9 @@ public class Y_DoorRotation : MonoBehaviour
         }
         
     }
-
     private void OnCollisionEnter(Collision other) {
-
-        if(other.gameObject.tag == "Player"){
-            //doRatation();
+        if (other.gameObject.tag == "Player")
+        {
             Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - this.transform.position, this.transform.up);
             Debug.Log(targetRotation);
             if(targetRotation.x > 0){
@@ -50,11 +48,8 @@ public class Y_DoorRotation : MonoBehaviour
                 doorAnimator.SetBool("isOpen", isOpen);
                 doorAnimator.SetFloat("Move", -1.0f);
             }
-            
         }
-    
     }
-
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
