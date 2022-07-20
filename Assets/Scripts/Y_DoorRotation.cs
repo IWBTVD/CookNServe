@@ -33,7 +33,7 @@ public class Y_DoorRotation : MonoBehaviour
         }
         
     }
-    private void OnCollisionEnter(Collision other) {
+    private void OnCollisionEnter(Collision other) {//삭제하면 안됨
         if (other.gameObject.tag == "Player")
         {
             Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - this.transform.position, this.transform.up);
@@ -54,6 +54,7 @@ public class Y_DoorRotation : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            //충돌방향체크
             Quaternion targetRotation = Quaternion.LookRotation(other.transform.position - this.transform.position, this.transform.up);
             Debug.Log(targetRotation);
             if(targetRotation.x > 0){

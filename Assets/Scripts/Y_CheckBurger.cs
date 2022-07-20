@@ -4,5 +4,7 @@ using UnityEngine;
 
 public class Y_CheckBurger : MonoBehaviour
 {
-   
+   public List<IngredientType> recipe1 = new List<IngredientType>(new IngredientType[]{});
+
+
 }
