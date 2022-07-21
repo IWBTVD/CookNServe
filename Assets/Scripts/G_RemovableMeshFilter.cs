@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RemovableMeshFilter : MonoBehaviour
+public class G_RemovableMeshFilter : MonoBehaviour
 {
     public MeshFilter[] meshfilters = new MeshFilter[1];
 

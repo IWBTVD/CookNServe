@@ -68,7 +68,7 @@ public class G_Ingredient : MonoBehaviour
             G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
             hamburger.StackIngredient(meshObject, height, ingredientType);
             isUsed = true;
-            meshObject.GetComponent<RemovableMeshFilter>().RemoveMeshFilter();
+            meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
             Destroy(gameObject, 2f);    
         }
         
