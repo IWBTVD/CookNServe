@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6051,7 +6051,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771586973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.58, y: 0.876, z: 3.35}
+  m_LocalPosition: {x: 7.605, y: 0.71, z: 1.944}
   m_LocalScale: {x: 0.2598, y: 0.099874906, z: 0.2598}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10301,6 +10301,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6671984056884567046, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.064
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671984056884567046, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.061
+      objectReference: {fileID: 0}
+    - target: {fileID: 6671984056884567046, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.029
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
 --- !u!1001 &1378058394
@@ -10893,6 +10905,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7863828726054020402, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863828726054020402, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863828726054020403, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_UseGravity
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7863828726054020406, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
