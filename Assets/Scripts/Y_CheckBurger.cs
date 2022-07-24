@@ -21,15 +21,13 @@ public class Y_CheckBurger : MonoBehaviour
       if(other.tag == "Hamburger"){
          G_Hamburger enterBurger = other.GetComponent<G_Hamburger>();
          isSame = recipe1.Equals(enterBurger.stackedIngredients);
+         if(isSame){
+            Debug.Log("Same");
+         }
+         else{
+            Debug.Log("Diffrent");
+         }
       }
    }
 
-   private void Update() {
-      if(isSame){
-         Debug.Log("Same");
-      }
-      else{
-         Debug.Log("Diffrent");
-      }
-   }
 }
