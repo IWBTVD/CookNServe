@@ -7,7 +7,6 @@ public class Y_DoorRotation : MonoBehaviour
     Transform doorAxis;
     public float openSpeed = 5f;
     private bool isOpen = false;
-    private bool isClosed = false;
 
     
     public Animator doorAnimator;
