@@ -8,7 +8,6 @@ public class Y_CheckBurger : MonoBehaviour
 
 
 <<<<<<< HEAD
-<<<<<<< HEAD
    private void OnTriggerEnter(Collider other) {
       if(other.tag == "Hamburger"){
          G_Hamburger enterBurger = other.GetComponent<G_Hamburger>();
@@ -22,8 +21,6 @@ public class Y_CheckBurger : MonoBehaviour
       }
    }
 
-=======
->>>>>>> parent of a2ca5636 (버거체크 임시구현)
 =======
 >>>>>>> parent of a2ca5636 (버거체크 임시구현)
 }
