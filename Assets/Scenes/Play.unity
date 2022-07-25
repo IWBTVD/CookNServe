@@ -6051,11 +6051,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771586973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-<<<<<<< HEAD
   m_LocalPosition: {x: 7.605, y: 0.856, z: 1.944}
-=======
   m_LocalPosition: {x: 2.58, y: 0.876, z: 3.35}
->>>>>>> parent of a2ca5636 (버거체크 임시구현)
   m_LocalScale: {x: 0.2598, y: 0.099874906, z: 0.2598}
   m_Children: []
   m_Father: {fileID: 0}
@@ -10899,7 +10896,6 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< HEAD
     - target: {fileID: 7863828726054020402, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -10916,8 +10912,6 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 3
       objectReference: {fileID: 0}
-=======
->>>>>>> parent of a2ca5636 (버거체크 임시구현)
     - target: {fileID: 7863828726054020406, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_RootOrder
       value: 8

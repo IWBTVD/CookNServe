@@ -6,8 +6,8 @@ public class Y_CheckBurger : MonoBehaviour
 {
    public List<IngredientType> recipe1 = new List<IngredientType>(new IngredientType[]{});
 
+   private bool isSame = false;
 
-<<<<<<< HEAD
    private void OnTriggerEnter(Collider other) {
       if(other.tag == "Hamburger"){
          G_Hamburger enterBurger = other.GetComponent<G_Hamburger>();
@@ -21,6 +21,5 @@ public class Y_CheckBurger : MonoBehaviour
       }
    }
 
-=======
->>>>>>> parent of a2ca5636 (버거체크 임시구현)
+
 }
