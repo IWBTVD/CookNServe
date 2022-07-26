@@ -13,6 +13,16 @@ public class Y_CookOnFire : MonoBehaviour
 
     [SerializeField]
     private GameObject go_CookedItem_Prefab; // 익혀진 혹은 탄 고기 아이템 교체
+    public Material cookedMaterial;
+
+    public G_Ingredient g_Ingredient;
+    private MeshRenderer meshRenderer;
+
+    private void Start()
+    {
+        g_Ingredient = GetComponentInParent<G_Ingredient>();
+        meshRenderer = GetComponent<MeshRenderer>();
+    }
 
     private void OnCollisionEnter(Collision other) {
         Debug.Log("Touch");
@@ -24,8 +34,10 @@ public class Y_CookOnFire : MonoBehaviour
             if (currentTime >= time)
             {
                 done = true;
-                Instantiate(go_CookedItem_Prefab, transform.position, Quaternion.Euler(transform.eulerAngles));
-                Destroy(gameObject); // 날고기인 자기 자신은 파괴
+                //Instantiate(go_CookedItem_Prefab, transform.position, Quaternion.Euler(transform.eulerAngles));
+                //Destroy(gameObject); // 날고기인 자기 자신은 파괴
+
+                meshRenderer.material = cookedMaterial;
             }
         }
     }
