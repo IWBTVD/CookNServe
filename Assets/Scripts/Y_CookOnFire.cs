@@ -20,12 +20,13 @@ public class Y_CookOnFire : MonoBehaviour
         if(other.transform.tag == "Fire" && !done)
         {
             currentTime += Time.deltaTime;
-
+            Debug.Log("Touch");
             if (currentTime >= time)
             {
                 done = true;
                 Instantiate(go_CookedItem_Prefab, transform.position, Quaternion.Euler(transform.eulerAngles));
                 Destroy(gameObject); // 날고기인 자기 자신은 파괴
+                Debug.Log("Cooked");
             }
         }
     }
