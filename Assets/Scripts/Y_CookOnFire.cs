@@ -14,19 +14,18 @@ public class Y_CookOnFire : MonoBehaviour
     [SerializeField]
     private GameObject go_CookedItem_Prefab; // 익혀진 혹은 탄 고기 아이템 교체
 
-
-    private void OnTriggerStay(Collider other)
-    {
+    private void OnCollisionEnter(Collision other) {
+        Debug.Log("Touch");
+    }
+    private void OnCollisionStay(Collision other) {
         if(other.transform.tag == "Fire" && !done)
         {
             currentTime += Time.deltaTime;
-            Debug.Log("Touch");
             if (currentTime >= time)
             {
                 done = true;
                 Instantiate(go_CookedItem_Prefab, transform.position, Quaternion.Euler(transform.eulerAngles));
                 Destroy(gameObject); // 날고기인 자기 자신은 파괴
-                Debug.Log("Cooked");
             }
         }
     }
