@@ -10,7 +10,7 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     // Start is called before the first frame update
     void Start()
     {
-        spawnedPlayerPrefab = PhotonNetwork.Instantiate("OVRPlayerController", transform.position, transform.rotation);
+        //spawnedPlayerPrefab = PhotonNetwork.Instantiate("OVRPlayerController", transform.position, transform.rotation);
     }
 
     // Update is called once per frame
@@ -23,5 +23,10 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
     {
         base.OnLeftRoom();
         PhotonNetwork.Destroy(spawnedPlayerPrefab);
+    }
+
+    public void SpawnPlayer()
+    {
+        spawnedPlayerPrefab = PhotonNetwork.Instantiate("OVRPlayerController", transform.position, transform.rotation);
     }
 }
