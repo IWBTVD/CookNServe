@@ -10,6 +10,7 @@ public class G_Ingredient : MonoBehaviour
 
     public float height;
     public bool isUsed = false;
+    public bool isCooked = false;
 
     public GameObject meshObject;
 
@@ -58,7 +59,7 @@ public class G_Ingredient : MonoBehaviour
     }
 
     /// <summary>
-    /// ????? ????? Hamburger????? ????? ????? ?????????
+    /// 트리거에 햄버거 접시가 닿으면 쌓인다
     /// </summary>
     /// <param name="other"></param>
     private void OnTriggerEnter(Collider other)

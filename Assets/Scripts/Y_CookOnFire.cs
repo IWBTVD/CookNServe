@@ -25,11 +25,12 @@ public class Y_CookOnFire : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision other) {
-        Debug.Log("Touch");
+        
     }
     private void OnCollisionStay(Collision other) {
         if(other.transform.tag == "Fire" && !done)
         {
+            Debug.Log("Cooking");
             currentTime += Time.deltaTime;
             if (currentTime >= time)
             {
@@ -38,6 +39,7 @@ public class Y_CookOnFire : MonoBehaviour
                 //Destroy(gameObject); // 날고기인 자기 자신은 파괴
 
                 meshRenderer.material = cookedMaterial;
+                g_Ingredient.isCooked = true;
             }
         }
     }
