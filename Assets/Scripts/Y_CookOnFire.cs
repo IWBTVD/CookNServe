@@ -20,12 +20,12 @@ public class Y_CookOnFire : MonoBehaviour
 
     private void Start()
     {
-        g_Ingredient = GetComponentInParent<G_Ingredient>();
-        meshRenderer = GetComponent<MeshRenderer>();
+        g_Ingredient = GetComponent<G_Ingredient>();
+        meshRenderer = GetComponentInChildren<MeshRenderer>();
     }
 
     private void OnCollisionEnter(Collision other) {
-        
+        Debug.Log("Fire Touch");
     }
     private void OnCollisionStay(Collision other) {
         if(other.transform.tag == "Fire" && !done)
