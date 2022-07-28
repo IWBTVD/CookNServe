@@ -12,7 +12,6 @@ public class Y_CookOnFire : MonoBehaviour
     private bool done; // 끝났으면 더 이상 불에 있어도 계산 무시할 수 있게끔
 
     [SerializeField]
-    private GameObject go_CookedItem_Prefab; // 익혀진 혹은 탄 고기 아이템 교체
     public Material cookedMaterial;
 
     public G_Ingredient g_Ingredient;
@@ -35,11 +34,10 @@ public class Y_CookOnFire : MonoBehaviour
             if (currentTime >= time)
             {
                 done = true;
-                //Instantiate(go_CookedItem_Prefab, transform.position, Quaternion.Euler(transform.eulerAngles));
-                //Destroy(gameObject); // 날고기인 자기 자신은 파괴
+                meshRenderer.material = cookedMaterial; //메테리얼 교체
+                g_Ingredient.isCooked = true; //구워짐
+                g_Ingredient.ingredientType = IngredientType.CookedCutletB;
 
-                meshRenderer.material = cookedMaterial;
-                g_Ingredient.isCooked = true;
             }
         }
     }

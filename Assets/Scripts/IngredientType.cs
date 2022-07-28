@@ -7,6 +7,7 @@ public enum IngredientType
 {
     Cabbage,
     CutletB,
+    CookedCutletB,
     Tomato,
     Cheese,
     Pepperoni,

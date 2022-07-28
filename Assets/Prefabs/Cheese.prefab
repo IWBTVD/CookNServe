@@ -192,9 +192,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3089ab926305ac4ea189e62873cd3b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ingredientType: 3
+  ingredientType: 4
   height: 0.005
   isUsed: 0
+  isCooked: 0
   meshObject: {fileID: 8119737317220304566}
 --- !u!114 &8119737316407386982
 MonoBehaviour:
