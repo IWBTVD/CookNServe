@@ -160,35 +160,37 @@ public class OVRPlayerController : MonoBehaviour
 	private bool ReadyToSnapTurn; // Set to true when a snap turn has occurred, code requires one frame of centered thumbstick to enable another snap turn.
 	private bool playerControllerEnabled = false;
 
-    //public G_FixedRotation fixedRotation;
+    //public PhotonView photonView;
 
 	void Start()
 	{
-		// Add eye-depth as a camera offset from the player controller
-		var p = CameraRig.transform.localPosition;
+        Controller = gameObject.GetComponent<CharacterController>();
+
+        if (Controller == null)
+            Debug.LogWarning("OVRPlayerController: No CharacterController attached.");
+
+        // We use OVRCameraRig to set rotations to cameras,
+        // and to be influenced by rotation
+        OVRCameraRig[] CameraRigs = gameObject.GetComponentsInChildren<OVRCameraRig>();
+
+        if (CameraRigs.Length == 0)
+            Debug.LogWarning("OVRPlayerController: No OVRCameraRig attached.");
+        else if (CameraRigs.Length > 1)
+            Debug.LogWarning("OVRPlayerController: More then 1 OVRCameraRig attached.");
+        else
+            CameraRig = CameraRigs[0];
+
+        InitialYRotation = transform.rotation.eulerAngles.y;
+
+        // Add eye-depth as a camera offset from the player controller
+        var p = CameraRig.transform.localPosition;
 		p.z = OVRManager.profile.eyeDepth;
 		CameraRig.transform.localPosition = p;
 	}
 
 	void Awake()
 	{
-		Controller = gameObject.GetComponent<CharacterController>();
-
-		if (Controller == null)
-			Debug.LogWarning("OVRPlayerController: No CharacterController attached.");
-
-		// We use OVRCameraRig to set rotations to cameras,
-		// and to be influenced by rotation
-		OVRCameraRig[] CameraRigs = gameObject.GetComponentsInChildren<OVRCameraRig>();
-
-		if (CameraRigs.Length == 0)
-			Debug.LogWarning("OVRPlayerController: No OVRCameraRig attached.");
-		else if (CameraRigs.Length > 1)
-			Debug.LogWarning("OVRPlayerController: More then 1 OVRCameraRig attached.");
-		else
-			CameraRig = CameraRigs[0];
-
-		InitialYRotation = transform.rotation.eulerAngles.y;
+		
 	}
 
 	void OnEnable()

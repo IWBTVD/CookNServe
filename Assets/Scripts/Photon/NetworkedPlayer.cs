@@ -1,51 +1,29 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using Photon.Pun;
 
 public class NetworkedPlayer : MonoBehaviourPun
 {
-    public GameObject avatar;
+    public GameObject ovrCameraRig;
+    public GameObject otherModel;
 
-    public Transform playerGlobal;
-    public Transform playerLocal;
+    public OVRPlayerController ovrPlayerController;
+    public OVRSceneSampleController ovrSceneSampleController;
 
-    //public PhotonView photonView;
-
-    void Start()
+    private void Awake()
     {
-        //photonView = GetComponent<PhotonView>();
+        ovrPlayerController = GetComponent <OVRPlayerController>();
+        ovrSceneSampleController = GetComponent<OVRSceneSampleController>();
 
-        Debug.Log("i'm instantiated");
+        ovrCameraRig.SetActive(photonView.IsMine);
+        otherModel.SetActive(!photonView.IsMine);
 
-        if (photonView.IsMine)
+        if(photonView.IsMine)
         {
-            Debug.Log("player is mine");
-
-            playerGlobal = GameObject.Find("OVRPlayerController").transform;
-            playerLocal = playerGlobal.Find("OVRCameraRig/TrackingSpace/CenterEyeAnchor");
-
-            this.transform.SetParent(playerLocal);
-            this.transform.localPosition = Vector3.zero;
-
-            // avatar.SetActive(false);
+            ovrPlayerController.enabled = true;
+            ovrSceneSampleController.enabled = true;
         }
-    }
 
-    void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
-    {
-        if (stream.IsWriting)
-        {
-            stream.SendNext(playerGlobal.position);
-            stream.SendNext(playerGlobal.rotation);
-            stream.SendNext(playerLocal.localPosition);
-            stream.SendNext(playerLocal.localRotation);
-        }
-        else
-        {
-            this.transform.position = (Vector3)stream.ReceiveNext();
-            this.transform.rotation = (Quaternion)stream.ReceiveNext();
-            avatar.transform.localPosition = (Vector3)stream.ReceiveNext();
-            avatar.transform.localRotation = (Quaternion)stream.ReceiveNext();
-        }
     }
 }

@@ -81,6 +81,11 @@ public class OVRDebugInfo : MonoBehaviour
     /// </summary>
     void Awake()
     {
+        
+    }
+
+    private void Start()
+    {
         // Create canvas for using new GUI
         debugUIManager = new GameObject();
         debugUIManager.name = "DebugUIManager";
