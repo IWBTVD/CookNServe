@@ -193,6 +193,7 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
+  - {fileID: 8226657995070081646}
   - {fileID: 4472581112710536839}
   - {fileID: 2606313433809563236}
   - {fileID: 6806295470123895636}
@@ -215,6 +216,14 @@ MonoBehaviour:
   otherModel: {fileID: 892121524450318276}
   ovrPlayerController: {fileID: 246645872040614050}
   ovrSceneSampleController: {fileID: 246645872040807648}
+  myBody:
+  - {fileID: 246645872050827620}
+  - {fileID: 246645872490939610}
+  - {fileID: 246645871596647416}
+  otherBody:
+  - {fileID: 5817467643825803248}
+  - {fileID: 3702941641217405174}
+  - {fileID: 1073242225441978721}
 --- !u!1 &246645872050335042
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,9 +930,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5817467643825803248}
   - {fileID: 3702941641217405174}
   - {fileID: 1073242225441978721}
+  - {fileID: 5817467643825803248}
   m_Father: {fileID: 246645872050827630}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -956,7 +965,7 @@ Transform:
   m_Children:
   - {fileID: 239300271519435087}
   m_Father: {fileID: 5551734351500311831}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2619512788158146514
 GameObject:
@@ -1102,7 +1111,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5551734351500311831}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2947458356906818802
 MeshFilter:
@@ -1292,7 +1301,7 @@ Transform:
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 5551734351500311831}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &9090390609283766576
 MeshFilter:
