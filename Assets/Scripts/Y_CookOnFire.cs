@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Y_CookOnFire : MonoBehaviour
+public class Y_CookOnFire : MonoBehaviourPun
 {
     // Start is called before the first frame update
     [SerializeField]
@@ -26,19 +27,25 @@ public class Y_CookOnFire : MonoBehaviour
     private void OnCollisionEnter(Collision other) {
         Debug.Log("Fire Touch");
     }
-    private void OnCollisionStay(Collision other) {
-        if(other.transform.tag == "Fire" && !done)
+    private void OnCollisionStay(Collision other)
+    {
+        if (other.transform.tag == "Fire" && !done)
         {
             Debug.Log("Cooking");
             currentTime += Time.deltaTime;
             if (currentTime >= time)
             {
-                done = true;
-                meshRenderer.material = cookedMaterial; //메테리얼 교체
-                g_Ingredient.isCooked = true; //구워짐
-                g_Ingredient.ingredientType = IngredientType.CookedCutletB;
-
+                photonView.RPC("CompleteCooking", RpcTarget.AllBuffered);
             }
         }
+    }
+
+
+    [PunRPC]
+    void CompleteCooking() {
+        done = true;
+        meshRenderer.material = cookedMaterial; //메테리얼 교체
+        g_Ingredient.isCooked = true; //구워짐
+        g_Ingredient.ingredientType = IngredientType.CookedCutletB;
     }
 }

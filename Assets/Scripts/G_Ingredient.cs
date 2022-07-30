@@ -15,7 +15,7 @@ public class G_Ingredient : MonoBehaviour
     public GameObject meshObject;
 
     private MeshCollider triggerCollider;
-    private OVRGrabbable ovrGrabbable;
+    private G_PhotonGrabbable grabbable;
 
     private float timer;
     private float stackableTime = 0.5f;
@@ -26,20 +26,20 @@ public class G_Ingredient : MonoBehaviour
     private void Start()
     {
         triggerCollider = GetComponent<MeshCollider>();
-        ovrGrabbable = GetComponent<OVRGrabbable>();
+        grabbable = GetComponent<G_PhotonGrabbable>();
     }
 
     private void Update()
     {
         
-        if (ovrGrabbable.isGrabbed)
+        if (grabbable.isGrabbed)
         {
             isStackable = false;
             isGrabbed = true;
             triggerCollider.enabled = false;
         }
         //잡는 즉시 한번만 실행
-        if (ovrGrabbable.isGrabbed != isGrabbed)
+        if (grabbable.isGrabbed != isGrabbed)
         {
             isGrabbed = false;
             isStackable = true;

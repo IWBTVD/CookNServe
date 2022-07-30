@@ -873,6 +873,27 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &3081795871004483609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 246645872491225390}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b346945bf45f62741a5c9e958c25278f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_moveHandPosition: 0
+  m_gripTransform: {fileID: 246645872490873414}
+  m_grabVolumes: []
+  m_controller: 1
+  m_parentTransform: {fileID: 246645872050744330}
+  m_player: {fileID: 246645872050335040}
 --- !u!1 &247623364847355892
 GameObject:
   m_ObjectHideFlags: 0
@@ -1708,6 +1729,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 246645872050335040}
     - target: {fileID: 11438496, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11438496, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
       propertyPath: m_parentTransform
       value: 
       objectReference: {fileID: 246645872050744330}
@@ -1897,5 +1922,10 @@ GameObject:
 --- !u!4 &246645872490939610 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 414912, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
+  m_PrefabInstance: {fileID: 246645872491089946}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &246645872490873414 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 479836, guid: e6ba3498ffa1e534b91a07264266e6b8, type: 3}
   m_PrefabInstance: {fileID: 246645872491089946}
   m_PrefabAsset: {fileID: 0}

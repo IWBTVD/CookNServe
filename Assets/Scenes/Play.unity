@@ -971,6 +971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabbage
       objectReference: {fileID: 0}
+    - target: {fileID: 2449762266526192715, guid: 234092862f0fc314a93711c847f1abad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234092862f0fc314a93711c847f1abad, type: 3}
 --- !u!1 &123877230
@@ -3081,6 +3085,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread A
       objectReference: {fileID: 0}
+    - target: {fileID: 5358561140421207248, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8292060895383344773, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -3866,6 +3874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
 --- !u!1001 &568665185
@@ -4530,6 +4542,10 @@ PrefabInstance:
     - target: {fileID: 6976504154017385922, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_Name
       value: Tomato (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6976504154017385922, guid: d693218d914b9044baa15966ea0971d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d693218d914b9044baa15966ea0971d7, type: 3}
@@ -8558,6 +8574,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2037777737}
     m_Modifications:
+    - target: {fileID: 2105787732, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: sceneViewId
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2131637573275981923, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_Name
       value: Cutlet B (1)
@@ -9342,6 +9362,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread Down A
       objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9897,6 +9921,10 @@ PrefabInstance:
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_Name
       value: Mushroom (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -10507,6 +10535,10 @@ PrefabInstance:
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_Name
       value: Mushroom (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -12090,6 +12122,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cheese
       objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407387001, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
 --- !u!1001 &1642904532
@@ -12777,6 +12813,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2037777737}
     m_Modifications:
+    - target: {fileID: 2105787732, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: sceneViewId
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2131637573275981923, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_Name
       value: Cutlet B (3)
@@ -13219,6 +13259,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2105787732, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: sceneViewId
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 2131637573275981923, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_Name
       value: Cutlet B (2)
@@ -13270,6 +13314,10 @@ PrefabInstance:
     - target: {fileID: 4397597929581392836, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4397597929581392842, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
@@ -13412,6 +13460,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2037777737}
     m_Modifications:
+    - target: {fileID: 2105787732, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: sceneViewId
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2131637573275981923, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_Name
       value: Cutlet B (2)
@@ -13701,6 +13753,10 @@ PrefabInstance:
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_Name
       value: Mushroom
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -20120,6 +20176,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tomato
       objectReference: {fileID: 0}
+    - target: {fileID: 6976504154017385922, guid: d693218d914b9044baa15966ea0971d7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_IsKinematic
       value: 0
@@ -20180,6 +20240,10 @@ PrefabInstance:
     - target: {fileID: 2449762266526192715, guid: 234092862f0fc314a93711c847f1abad, type: 3}
       propertyPath: m_Name
       value: Cabbage (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449762266526192715, guid: 234092862f0fc314a93711c847f1abad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 234092862f0fc314a93711c847f1abad, type: 3}
@@ -21632,6 +21696,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2037777737}
     m_Modifications:
+    - target: {fileID: 2105787732, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
+      propertyPath: sceneViewId
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2131637573275981923, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
       propertyPath: m_Name
       value: Cutlet B
