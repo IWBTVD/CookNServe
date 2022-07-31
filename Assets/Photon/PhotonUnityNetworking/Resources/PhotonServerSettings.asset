@@ -16,7 +16,7 @@ MonoBehaviour:
     AppIdRealtime: 20440e5d-318c-4d82-b784-ad47b4883ae1
     AppIdFusion: 
     AppIdChat: 
-    AppIdVoice: 
+    AppIdVoice: f4f4abbb-7762-42f5-80a0-c55b1329cb19
     AppVersion: 
     UseNameServer: 1
     FixedRegion: 
@@ -41,6 +41,9 @@ MonoBehaviour:
   - RespawnSpaceship
   - CompleteCooking
   - StackIngredient
+  - CantHearYou
+  - ChangeColour
+  - HeresWhy
   DisableAutoOpenWizard: 1
-  ShowSettings: 0
+  ShowSettings: 1
   DevRegionSetOnce: 1
