@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class G_Ingredient : MonoBehaviour
+public class G_Ingredient : MonoBehaviourPun
 {
     
     public IngredientType ingredientType;
@@ -66,12 +67,17 @@ public class G_Ingredient : MonoBehaviour
     {
         if(other.gameObject.tag == "Hamburger" && isStackable && !isUsed)
         {
-            G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
-            hamburger.StackIngredient(meshObject, height, ingredientType);
-            isUsed = true;
-            meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
-            Destroy(gameObject, 2f);    
+            photonView.RPC("StackHamburger", RpcTarget.AllBuffered, other);
         }
-        
     }
+
+    private void StackHamburger(Collider other)
+    {
+        G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
+        hamburger.photonView.RPC("StackHamburger", RpcTarget.AllBuffered, meshObject, height, ingredientType);
+
+        isUsed = true;
+        meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
+        Destroy(gameObject, 2f);
+    } 
 }

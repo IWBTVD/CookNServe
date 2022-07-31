@@ -11,11 +11,14 @@ GameObject:
   - component: {fileID: 7863828726054020406}
   - component: {fileID: 7863828726054020403}
   - component: {fileID: 7863828726054020402}
-  - component: {fileID: 7863828726054020401}
+  - component: {fileID: 1947015919005934596}
   - component: {fileID: 7863828726054020400}
   - component: {fileID: 2033300073}
   - component: {fileID: 1000936436}
   - component: {fileID: 1000936435}
+  - component: {fileID: 8217023150460191672}
+  - component: {fileID: 821165199829736628}
+  - component: {fileID: 3006064656455752446}
   m_Layer: 0
   m_Name: Dish
   m_TagString: Hamburger
@@ -67,7 +70,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.02, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7863828726054020401
+--- !u!114 &1947015919005934596
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -76,7 +79,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7863828726054020431}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02d61468f8b77ae4b92c344bc9a600fb, type: 3}
+  m_Script: {fileID: 11500000, guid: adf300ba974566942b7ab3c2fe7d0a12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_allowOffhandGrab: 1
@@ -222,6 +225,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Put_Sound: {fileID: 8300000, guid: 38ac8234542854ff1af6ac23e3a544b7, type: 3}
+--- !u!114 &8217023150460191672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863828726054020431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents:
+  - {fileID: 821165199829736628}
+  - {fileID: 3006064656455752446}
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
+--- !u!114 &821165199829736628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863828726054020431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 627855c7f81362d41938ffe0b1475957, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizePosition: 1
+  m_SynchronizeRotation: 1
+  m_SynchronizeScale: 0
+  m_UseLocal: 1
+--- !u!114 &3006064656455752446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863828726054020431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &7863828726172107795
 GameObject:
   m_ObjectHideFlags: 0

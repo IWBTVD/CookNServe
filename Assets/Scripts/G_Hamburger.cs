@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class G_Hamburger : MonoBehaviour
+public class G_Hamburger : MonoBehaviourPun
 {
     //내 주석들 돌려내!!
     //내가 건드리니까 꺠짐 ㅋㅋㅋㅋ
@@ -15,6 +16,16 @@ public class G_Hamburger : MonoBehaviour
     private void Start() {
         ingredientSound = GetComponent<Y_IngredientSound>();
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Ingredient" )
+        {
+           ingredientSound.playSound();
+        }
+    }
+
+    [PunRPC]
     public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
     {
         stackedIngredients.Add(ingredientType);
@@ -29,13 +40,5 @@ public class G_Hamburger : MonoBehaviour
         triggerCollider.center = new Vector3(triggerCollider.center.x,
                                              triggerCollider.center.y + (height / 2),
                                              triggerCollider.center.z);
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Ingredient" )
-        {
-           ingredientSound.playSound();
-        }
     }
 }
