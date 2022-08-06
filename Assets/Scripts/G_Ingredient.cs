@@ -42,9 +42,7 @@ public class G_Ingredient : MonoBehaviourPun
         //잡는 즉시 한번만 실행
         if (grabbable.isGrabbed != isGrabbed)
         {
-            isGrabbed = false;
-            isStackable = true;
-            timer = 0f;
+            photonView.RPC(nameof(SetTimer), RpcTarget.All);
         }
 
         //손에서 놓은 후 0.5초동안 그릇에 닿으면 쌓아짐
@@ -54,7 +52,6 @@ public class G_Ingredient : MonoBehaviourPun
             if (timer >= stackableTime)
             {
                 isStackable = false;
-                timer = 0f;
             }   
         }
     }
@@ -62,22 +59,28 @@ public class G_Ingredient : MonoBehaviourPun
     /// <summary>
     /// 트리거에 햄버거 접시가 닿으면 쌓인다
     /// </summary>
-    /// <param name="other"></param>
+    /// <param name="other">햄버거 접시 충돌체</param>
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "Hamburger" && isStackable && !isUsed)
         {
-            photonView.RPC("StackHamburger", RpcTarget.AllBuffered, other);
+            StackHamburger(other);
         }
     }
-
     private void StackHamburger(Collider other)
     {
         G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
-        hamburger.photonView.RPC("StackHamburger", RpcTarget.AllBuffered, meshObject, height, ingredientType);
+        hamburger.StackIngredient(meshObject, height, ingredientType);
 
         isUsed = true;
         meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
         Destroy(gameObject, 2f);
-    } 
+    }
+
+    [PunRPC] void SetTimer()
+    {
+        isGrabbed = false;
+        isStackable = true;
+        timer = 0f;
+    }
 }

@@ -25,13 +25,13 @@ public class Y_CookOnFire : MonoBehaviourPun
     }
 
     private void OnCollisionEnter(Collision other) {
-        Debug.Log("Fire Touch");
+        //Debug.Log("Fire Touch");
     }
     private void OnCollisionStay(Collision other)
     {
         if (other.transform.tag == "Fire" && !done)
         {
-            Debug.Log("Cooking");
+            //Debug.Log("Cooking");
             currentTime += Time.deltaTime;
             if (currentTime >= time)
             {

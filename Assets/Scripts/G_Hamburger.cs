@@ -5,8 +5,7 @@ using Photon.Pun;
 
 public class G_Hamburger : MonoBehaviourPun
 {
-    //내 주석들 돌려내!!
-    //내가 건드리니까 꺠짐 ㅋㅋㅋㅋ
+    //재료를 담는 리스트
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
     public float totalHeight = 0.005f;
@@ -25,7 +24,6 @@ public class G_Hamburger : MonoBehaviourPun
         }
     }
 
-    [PunRPC]
     public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
     {
         stackedIngredients.Add(ingredientType);
