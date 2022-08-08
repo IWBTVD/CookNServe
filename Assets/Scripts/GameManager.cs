@@ -5,11 +5,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NetworkManager : MonoBehaviourPunCallbacks // PUN 구현할때 override 사용해 코드 작성해야됨
+public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 override 사용해 코드 작성해야됨
 {
     private string gameVersion = "1"; // 같은 버전끼리 매칭하기 위해 string 사용 숫자뿐만 아닌 다른 것도 사용 가능
 
     public PlayerSpawner playerSpawner;
+
+    public G_Seat[] seatArray;
+
+
 
     private void Start()
     {
@@ -29,5 +33,27 @@ public class NetworkManager : MonoBehaviourPunCallbacks // PUN 구현할때 over
     {
         playerSpawner.SpawnPlayer();
     }
+
+    //의자 배열에서 빈 의자 찾기
+    public G_Seat FindSeat(bool isLeader)
+    {
+        foreach(var seat in seatArray)
+        {
+            //리더가 자리를 찾는 경우
+            if(isLeader)
+            {
+                //자리가 비어있으면 리턴
+                if (!seat.isUsing)
+                {
+                    seat.isUsing = true;
+                    return seat;
+                }
+            }
+        }
+
+        //테이블이 모두 사용중이면 널값 리턴
+        return null;
+    }
+
 
 }

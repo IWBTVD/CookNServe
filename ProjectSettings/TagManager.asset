@@ -11,6 +11,8 @@ TagManager:
   - Ketchup
   - Customer
   - Fire
+  - GameManager
+  - TableEntrance
   layers:
   - Default
   - TransparentFX
