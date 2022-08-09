@@ -10,7 +10,7 @@ public class Y_BigDoor : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerStay(Collider other) {
         if(other.tag == "Player" || other.tag == "Customer"){
             animator.SetBool("isOpen",true);
         }

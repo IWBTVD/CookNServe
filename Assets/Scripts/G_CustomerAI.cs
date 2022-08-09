@@ -20,7 +20,7 @@ public class G_CustomerAI : MonoBehaviour
     public State state = State.Idle;
 
     public bool isLeader = false;
-    public int myNumberInGroup = 0; //손님 무리에서 내가 몇번째인지 표시
+    public int myNumberInGroup = 0; //손님 무리에서 내가 몇번째인지 표시, 내가 앉을 좌석 번호랑 연관
     public GameManager gameManager;
 
     private NavMeshAgent nav;
@@ -28,12 +28,11 @@ public class G_CustomerAI : MonoBehaviour
     private Animator anim;
     private CapsuleCollider capsuleCollider;
 
-    private G_Seat mySeat;
-    public G_CustomerGroup myGroup;
+    private G_Seat mySeat;  //내 좌석 스크립트
+    public G_CustomerGroup myGroup; //내 그룹 스크립트
 
     private bool isLeaderSit = false;
     private bool isStateDone = false;
-    public float stateTimer;   //time.deltatime을 빼서 행동 완료시간을 검사함
 
     private void Awake()
     {
@@ -78,10 +77,6 @@ public class G_CustomerAI : MonoBehaviour
             case State.HeadingToPay: HeadToPay();  break;
             case State.Leaving: Leaving();  break;
         }
-        if(stateTimer > 0)
-        {
-            stateTimer -= Time.deltaTime;
-        }
     }
 
     /// <summary>
@@ -98,37 +93,48 @@ public class G_CustomerAI : MonoBehaviour
         //테이블에 도착했으면 앉고, 주문한다
         if (isStateDone)
         {
+            //테이블과 충돌하는거 없애기 위한 작업
             capsuleCollider.enabled = false;
             nav.radius = 0.01f;
             nav.enabled = false;
+
+            //좌석 위치에 텔레포트함
             transform.position = mySeat.GetSeat(myNumberInGroup).position;
             transform.rotation = mySeat.GetSeat(myNumberInGroup).rotation;
             anim.SetBool("isWalk", false);
             anim.SetBool("isSit", true);
-            stateTimer = Random.Range(5f, 10f);
+
+            //리더가 앉았으면 그룹에 주문시간 타이머를 작동시킨다
             if(isLeader)
             {
                 //내 그룹에게 자리에 앉았다고 호출한다
                 myGroup.SitOnTheSeat(mySeat);
+                //그룹에 주문 타이머를 동작시킨다
+                myGroup.photonView.RPC("DoOrder", Photon.Pun.RpcTarget.AllBuffered);
             }
             state = State.ChoosingMenu;
         }
         isStateDone = false;
     }
 
-    private void ChooseMenu()
+    //customerGroup의 타이머가 소진될때까지 기다림
+    public void ChooseMenu()
     {
-        if(stateTimer <= 0)
+        if (myGroup.stateTimer <= 0)
         {
+            //다 소진되면 주문 준비함
             anim.SetBool("isReadyToOrder", true);
             state = State.ReadyToOrder;
-            stateTimer = 0f;
+            //리더면 주문서 생성
+            if(isLeader)
+                mySeat.InstantiateOrderPaper();
         }
     }
+
     
     private void BeReadyToOrder()
     {
-
+        
     }
 
     private void WaitForMeal()

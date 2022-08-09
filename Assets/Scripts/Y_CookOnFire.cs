@@ -40,7 +40,6 @@ public class Y_CookOnFire : MonoBehaviourPun
         }
     }
 
-
     [PunRPC]
     void CompleteCooking() {
         done = true;
