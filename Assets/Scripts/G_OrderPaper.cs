@@ -1,20 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class G_OrderPaper : MonoBehaviour
 {
     public int orderNumber;
 
-    // Start is called before the first frame update
-    void Start()
+    public TextMeshProUGUI orderNumberText;
+
+    void Awake()
     {
-        
+        //orderNumberText = GetComponentInChildren<TextMeshPro>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetOrderNumber(int n)
     {
-        
+        orderNumber = n;
+        orderNumberText.text = orderNumber.ToString();
     }
 }

@@ -23,6 +23,7 @@ public class G_KitchenCounter : MonoBehaviourPun
     {
         if (collision.gameObject.tag == "OrderPaper")
         {
+            //주문서의 주문번호에 맞는 트레이 생성
             int trayNum = collision.gameObject.GetComponent<G_OrderPaper>().orderNumber;
             PhotonNetwork.Instantiate("Tray", trayTransforms[trayNum].position, trayTransforms[trayNum].rotation);
         }

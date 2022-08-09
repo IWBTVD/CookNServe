@@ -26,6 +26,7 @@ public class G_Seat : MonoBehaviourPun
     //주문서 생성
     public void InstantiateOrderPaper()
     {
-        PhotonNetwork.Instantiate("OrderPaper", orderPaperTransform.position, Quaternion.identity);
+        G_OrderPaper orderPaper = PhotonNetwork.Instantiate("OrderPaper", orderPaperTransform.position, orderPaperTransform.rotation).GetComponent<G_OrderPaper>();
+        orderPaper.SetOrderNumber(seatNumber);
     }
 }

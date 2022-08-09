@@ -14,19 +14,28 @@ public class Y_CookOnFire : MonoBehaviourPun
 
     [SerializeField]
     public Material cookedMaterial;
+    public AudioClip cookingClip;
 
     public G_Ingredient g_Ingredient;
+
     private MeshRenderer meshRenderer;
+    private AudioSource audioSource;
 
     private void Start()
     {
         g_Ingredient = GetComponent<G_Ingredient>();
         meshRenderer = GetComponentInChildren<MeshRenderer>();
+        audioSource = GetComponent<AudioSource>();
     }
 
-    private void OnCollisionEnter(Collision other) {
-        //Debug.Log("Fire Touch");
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.transform.tag == "Fire")
+        {
+            audioSource.PlayOneShot(cookingClip);
+        }
     }
+
     private void OnCollisionStay(Collision other)
     {
         if (other.transform.tag == "Fire" && !done)
