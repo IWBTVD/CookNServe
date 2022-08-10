@@ -27,6 +27,7 @@ public class G_CustomerAI : MonoBehaviour
     private Transform destination;
     private Animator anim;
     private CapsuleCollider capsuleCollider;
+    private Rigidbody rigid;
 
     private G_Seat mySeat;  //내 좌석 스크립트
     public G_CustomerGroup myGroup; //내 그룹 스크립트
@@ -40,6 +41,7 @@ public class G_CustomerAI : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
         capsuleCollider = GetComponent<CapsuleCollider>();
+        rigid = GetComponent<Rigidbody>();
         myGroup = GetComponentInParent<G_CustomerGroup>();
     }
 
@@ -112,6 +114,7 @@ public class G_CustomerAI : MonoBehaviour
                 //그룹에 주문 타이머를 동작시킨다
                 myGroup.photonView.RPC("DoOrder", Photon.Pun.RpcTarget.AllBuffered);
             }
+            rigid.isKinematic = true;
             state = State.ChoosingMenu;
         }
         isStateDone = false;

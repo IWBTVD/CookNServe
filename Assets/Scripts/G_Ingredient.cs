@@ -26,7 +26,7 @@ public class G_Ingredient : MonoBehaviourPun
 
     private void Start()
     {
-        triggerCollider = GetComponent<MeshCollider>();
+        //triggerCollider = GetComponent<MeshCollider>();
         grabbable = GetComponent<G_PhotonGrabbable>();
     }
 
@@ -37,7 +37,11 @@ public class G_Ingredient : MonoBehaviourPun
         {
             isStackable = false;
             isGrabbed = true;
-            triggerCollider.enabled = false;
+            //triggerCollider.enabled = false;
+
+            transform.parent.TryGetComponent(out G_UnpackChildren unpackChildren);
+            if(unpackChildren)
+                unpackChildren.UnpackChildren();
         }
         //잡는 즉시 한번만 실행
         if (grabbable.isGrabbed != isGrabbed)

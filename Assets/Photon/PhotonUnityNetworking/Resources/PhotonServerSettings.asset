@@ -47,6 +47,7 @@ MonoBehaviour:
   - StackHamburger
   - SetTimer
   - DoOrder
+  - UnpackIngredient
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

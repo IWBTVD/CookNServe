@@ -25,7 +25,8 @@ public class G_KitchenCounter : MonoBehaviourPun
         {
             //주문서의 주문번호에 맞는 트레이 생성
             int trayNum = collision.gameObject.GetComponent<G_OrderPaper>().orderNumber;
-            PhotonNetwork.Instantiate("Tray", trayTransforms[trayNum].position, trayTransforms[trayNum].rotation);
+            G_Tray tray = PhotonNetwork.Instantiate("Tray", trayTransforms[trayNum-1].position, trayTransforms[trayNum-1].rotation).GetComponent<G_Tray>();
+            tray.SetTrayNumber(trayNum);
         }
             
     }
