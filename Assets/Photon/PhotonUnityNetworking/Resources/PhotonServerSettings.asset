@@ -31,22 +31,20 @@ MonoBehaviour:
   DevRegion: kr
   PunLogging: 0
   EnableSupportLogger: 0
-  RunInBackground: 1
+  RunInBackground: 0
   StartInOfflineMode: 0
   RpcList:
-  - ClickRpc
-  - DestroyRpc
-  - DestroySpaceship
-  - Fire
-  - RespawnSpaceship
-  - CompleteCooking
-  - StackIngredient
   - CantHearYou
   - ChangeColour
-  - HeresWhy
-  - StackHamburger
-  - SetTimer
+  - ClickRpc
+  - CompleteCooking
+  - DestroyRpc
+  - DestroySpaceship
   - DoOrder
+  - Fire
+  - HeresWhy
+  - RespawnSpaceship
+  - SetTimer
   - UnpackIngredient
   DisableAutoOpenWizard: 1
   ShowSettings: 1

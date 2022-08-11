@@ -25,7 +25,9 @@ public class G_UnpackChildren : MonoBehaviourPun
         foreach(GameObject i in ingredients)
         {
             i.transform.SetParent(null);
-            i.GetComponent<Rigidbody>().useGravity = true;
+            Rigidbody r = i.GetComponent<Rigidbody>();
+            r.isKinematic = false;
+            r.useGravity = true;
         }
     }
 

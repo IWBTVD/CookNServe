@@ -41,7 +41,13 @@ public class G_Ingredient : MonoBehaviourPun
 
             transform.parent.TryGetComponent(out G_UnpackChildren unpackChildren);
             if(unpackChildren)
+            {
                 unpackChildren.UnpackChildren();
+                Rigidbody r = GetComponent<Rigidbody>();
+                r.isKinematic = false;
+                r.useGravity = true;
+            }
+                
         }
         //잡는 즉시 한번만 실행
         if (grabbable.isGrabbed != isGrabbed)

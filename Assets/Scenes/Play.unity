@@ -12855,9 +12855,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4010851465399465, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010851465399465, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010851465399465, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 329772698625353510, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
       propertyPath: sceneViewId
       value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 796458978414819628, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 796458978414819628, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 796458978414819628, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2381543399247233803, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
       propertyPath: sceneViewId
@@ -12915,9 +12939,33 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 54
       objectReference: {fileID: 0}
+    - target: {fileID: 4149220989573353908, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149220989573353908, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4149220989573353908, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4398143118422407739, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
       propertyPath: sceneViewId
       value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617092803994924992, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617092803994924992, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5617092803994924992, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8139275703846158674, guid: 0ce50b017f25c8944bdd6a08bf693b5d, type: 3}
       propertyPath: sceneViewId
@@ -33736,6 +33784,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 61
       objectReference: {fileID: 0}
+    - target: {fileID: 1377599151906395828, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1377599151906395828, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1694372147528121659, guid: b3068103f546beb4797cc72547cc3729, type: 3}
       propertyPath: sceneViewId
       value: 57
@@ -33748,6 +33804,22 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 59
       objectReference: {fileID: 0}
+    - target: {fileID: 2416003732048854572, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2416003732048854572, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063844649132641193, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3063844649132641193, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3321790813627768870, guid: b3068103f546beb4797cc72547cc3729, type: 3}
       propertyPath: sceneViewId
       value: 58
@@ -33755,6 +33827,14 @@ PrefabInstance:
     - target: {fileID: 6520734529456965202, guid: b3068103f546beb4797cc72547cc3729, type: 3}
       propertyPath: sceneViewId
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456031913713266880, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7456031913713266880, guid: b3068103f546beb4797cc72547cc3729, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3068103f546beb4797cc72547cc3729, type: 3}
