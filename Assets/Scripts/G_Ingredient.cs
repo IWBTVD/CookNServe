@@ -39,7 +39,8 @@ public class G_Ingredient : MonoBehaviourPun
             isGrabbed = true;
             //triggerCollider.enabled = false;
 
-            if(transform.parent.TryGetComponent(out G_UnpackChildren unpackChildren))
+            transform.parent.TryGetComponent(out G_UnpackChildren unpackChildren);
+            if(unpackChildren)
             {
                 unpackChildren.UnpackChildren();
                 Rigidbody r = GetComponent<Rigidbody>();
