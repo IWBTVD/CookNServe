@@ -6,8 +6,8 @@ public class Y_DoorRotation : MonoBehaviour
 {
     Transform doorAxis;
     public float openSpeed = 5f;
-    private bool isOpen = false;
-
+    public bool isOpen = false;
+    public bool callOpen = false;
     
     public Animator doorAnimator;
     private float timer;
@@ -49,6 +49,12 @@ public class Y_DoorRotation : MonoBehaviour
             }
         }
     }
+    private void OnCollisionExit(Collision other) {
+        callOpen = true;
+        if(callOpen){
+                callOpen = false;
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -70,5 +76,5 @@ public class Y_DoorRotation : MonoBehaviour
             }
         }
     }
-
+    
 }
