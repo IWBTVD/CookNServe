@@ -41,11 +41,12 @@ public class G_Ingredient : MonoBehaviourPun
 
             if(transform.parent)
             {
-                transform.parent.TryGetComponent(out G_UnpackChildren unpackChildren);
-                unpackChildren.UnpackChildren();
-                Rigidbody r = GetComponent<Rigidbody>();
-                r.isKinematic = false;
-                r.useGravity = true;
+                G_UnpackChildren unpackChildren = transform.parent.GetComponent<G_UnpackChildren>();
+                if(unpackChildren)
+                {
+                    unpackChildren.UnpackChildren();
+                    photonView.RPC(nameof(Unpack), RpcTarget.AllBuffered);
+                }
             }
                 
         }
@@ -92,5 +93,12 @@ public class G_Ingredient : MonoBehaviourPun
         isGrabbed = false;
         isStackable = true;
         timer = 0f;
+    }
+
+    [PunRPC] void Unpack()
+    {
+        Rigidbody r = GetComponent<Rigidbody>();
+        r.isKinematic = false;
+        r.useGravity = true;
     }
 }
