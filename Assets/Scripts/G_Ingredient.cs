@@ -45,7 +45,6 @@ public class G_Ingredient : MonoBehaviourPun
                 if(unpackChildren)
                 {
                     unpackChildren.UnpackChildren();
-                    photonView.RPC(nameof(Unpack), RpcTarget.AllBuffered);
                 }
             }
                 
