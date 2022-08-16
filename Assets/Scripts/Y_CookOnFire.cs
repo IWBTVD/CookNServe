@@ -12,6 +12,8 @@ public class Y_CookOnFire : MonoBehaviourPun
 
     private bool done; // 끝났으면 더 이상 불에 있어도 계산 무시할 수 있게끔
 
+    public bool isSoundPlayed = false;
+
     [SerializeField]
     public Material cookedMaterial;
     public AudioClip cookingClip;
@@ -30,9 +32,10 @@ public class Y_CookOnFire : MonoBehaviourPun
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.transform.tag == "Fire")
+        if (collision.transform.tag == "Fire" && !isSoundPlayed)
         {
             audioSource.PlayOneShot(cookingClip);
+            isSoundPlayed = true;
         }
     }
 

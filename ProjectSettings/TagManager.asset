@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Hamburger
   - Ingredient
-  - Fries
   - Wall
   - Ketchup
   - Customer
@@ -17,6 +16,7 @@ TagManager:
   - OrderPaper
   - Cola
   - FrenchFries
+  - Tray
   layers:
   - Default
   - TransparentFX

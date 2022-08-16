@@ -20,4 +20,9 @@ public class G_OrderPaper : MonoBehaviour
         orderNumber = n;
         orderNumberText.text = orderNumber.ToString();
     }
+
+    public void DestroyOrderPaper()
+    {
+        Destroy(gameObject);
+    }
 }

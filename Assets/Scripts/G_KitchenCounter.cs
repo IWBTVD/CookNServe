@@ -27,6 +27,8 @@ public class G_KitchenCounter : MonoBehaviourPun
             int trayNum = collision.gameObject.GetComponent<G_OrderPaper>().orderNumber;
             G_Tray tray = PhotonNetwork.Instantiate("Tray", trayTransforms[trayNum-1].position, trayTransforms[trayNum-1].rotation).GetComponent<G_Tray>();
             tray.SetTrayNumber(trayNum);
+
+            collision.gameObject.GetComponent<G_OrderPaper>().DestroyOrderPaper();
         }
             
     }
