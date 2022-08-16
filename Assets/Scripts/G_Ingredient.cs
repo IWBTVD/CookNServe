@@ -84,7 +84,7 @@ public class G_Ingredient : MonoBehaviourPun
 
         isUsed = true;
         meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
-        Destroy(gameObject, 2f);
+        GetComponent<G_SafeDestoy>().destroyThis();
     }
 
     [PunRPC] void SetTimer()

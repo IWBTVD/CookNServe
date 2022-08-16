@@ -7,7 +7,7 @@ public class Y_NoParent : MonoBehaviour
     private OVRGrabbable ovrGrabbable;
     void Start()
     {
-        ovrGrabbable = GetComponent<OVRGrabbable>();
+        ovrGrabbable = GetComponent<G_PhotonGrabbable>();
     }
 
     // Update is called once per frame

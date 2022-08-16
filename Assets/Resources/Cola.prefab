@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2995444184962439684}
   - component: {fileID: 4166080591117389108}
   - component: {fileID: 1625114834849573093}
+  - component: {fileID: 4678651896065899957}
   m_Layer: 0
   m_Name: Cola
   m_TagString: Cola
@@ -117,6 +118,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &4392548973024400580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,3 +191,15 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &4678651896065899957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974091023526205730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b344a4bed806774db042a939b03b0f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

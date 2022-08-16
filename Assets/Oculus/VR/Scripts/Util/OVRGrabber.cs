@@ -410,16 +410,22 @@ public class OVRGrabber : MonoBehaviour
 		if (m_player != null)
 		{
 			Collider[] playerColliders = m_player.GetComponentsInChildren<Collider>();
-			foreach (Collider pc in playerColliders)
+            CharacterController controller = m_player.GetComponent<CharacterController>();            //modified
+
+            foreach (Collider pc in playerColliders)
 			{
 				Collider[] colliders = grabbable.GetComponentsInChildren<Collider>();
 				foreach (Collider c in colliders)
 				{
                     if(!c.isTrigger && !pc.isTrigger)
-					    Physics.IgnoreCollision(c, pc, ignore);
+                    {
+                        Physics.IgnoreCollision(c, pc, ignore);
+                        Physics.IgnoreCollision(c, controller, ignore);            //modified
+                    }   
 				}
 			}
 		}
+
 	}
 }
 
