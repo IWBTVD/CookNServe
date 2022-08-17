@@ -8,7 +8,6 @@ public class Y_IngredientSound : MonoBehaviour
     //public List<IngredientType> stackedIngredients = new List<IngredientType>();
 
     public AudioClip Put_Sound;
-    private float timer;
 
     AudioSource audioSource;
     void Start()
@@ -16,22 +15,8 @@ public class Y_IngredientSound : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         
     }
-
-    private void Update()
-    {
-        if(timer > 0)
-        {
-            timer -= Time.deltaTime;
-        }
-    }
-
     public void playSound()
     {
-        if(timer <= 0)
-        {
-            audioSource.PlayOneShot(Put_Sound);
-            timer = .5f;
-        }
-
+        audioSource.PlayOneShot(Put_Sound);
     }
 }

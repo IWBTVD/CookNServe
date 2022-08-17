@@ -35,6 +35,6 @@ public class G_FrenchFry : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Tray")
-            GetComponent<G_SafeDestoy>().destroyThis();
+            Destroy(gameObject);
     }
 }

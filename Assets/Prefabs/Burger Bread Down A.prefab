@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 8315493811888839700}
   - component: {fileID: 4503002940190150351}
   - component: {fileID: 6039654143832136246}
-  - component: {fileID: -249663664580237657}
   m_Layer: 0
   m_Name: Burger Bread Down A
   m_TagString: Ingredient
@@ -88,7 +87,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 6671984056884567041}
-  m_grabbedBy: {fileID: 0}
 --- !u!114 &3029812754152355512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +111,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3029812754152355514}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8358244e2f7eae4bba0a59e60188b55, type: 3}
   m_Name: 
@@ -174,18 +172,6 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &-249663664580237657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3029812754152355514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b344a4bed806774db042a939b03b0f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6671984056884567042
 GameObject:
   m_ObjectHideFlags: 0

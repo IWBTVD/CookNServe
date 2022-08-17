@@ -12,24 +12,24 @@ public class G_Tray : MonoBehaviourPun
     private TextMeshPro[] trayOrderText;
     public int trayNumber;
 
+    //0: 햄버거, 1: 감튀 2: 콜라
+    public Transform[] foodTransforms;
+
     public GameObject cola;
     public GameObject frenchFry;
 
-    private bool isColaPlaced;
-    private bool isFrenchFryPlaced;
-    private bool isHamburgerPlaced;
-    public bool isReadyToServe = false;
-
-    public HamburgerType hamburgerType;
 
     // Start is called before the first frame update
     void Start()
     {
         cola.SetActive(false);
         frenchFry.SetActive(false);
+    }
 
-        int randomNumber = Random.Range(1, 2);
-        hamburgerType = (HamburgerType)randomNumber;
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 
     public void SetTrayNumber(int n)
@@ -43,9 +43,7 @@ public class G_Tray : MonoBehaviourPun
     {
         if(collision.transform.tag == "Cola")
         {
-            isColaPlaced = true;
             cola.SetActive(true);
-            collision.gameObject.GetComponent<G_SafeDestoy>().destroyThis();
         }
         else if(collision.transform.tag == "FrenchFries")
         {

@@ -113,7 +113,6 @@ GameObject:
   - component: {fileID: -2710687370303235536}
   - component: {fileID: 7822540123556233910}
   - component: {fileID: 5885461920361659906}
-  - component: {fileID: 8706635896557823491}
   m_Layer: 0
   m_Name: Cheese
   m_TagString: Ingredient
@@ -213,7 +212,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 8119737317220304567}
-  m_grabbedBy: {fileID: 0}
 --- !u!114 &-2710687370303235536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,18 +268,6 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &8706635896557823491
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8119737316407387001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b344a4bed806774db042a939b03b0f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &8119737316999539716
 GameObject:
   m_ObjectHideFlags: 0

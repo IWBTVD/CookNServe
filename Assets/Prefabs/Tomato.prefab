@@ -304,7 +304,7 @@ GameObject:
   - component: {fileID: 2845630894721172713}
   - component: {fileID: 8062393452485271269}
   - component: {fileID: 6801460002972032644}
-  - component: {fileID: 2008775773401098038}
+  - component: {fileID: 514897480384689626}
   m_Layer: 0
   m_Name: Tomato
   m_TagString: Ingredient
@@ -404,7 +404,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 9086515065098025699}
-  m_grabbedBy: {fileID: 0}
 --- !u!114 &8062393452485271269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -425,6 +424,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 6801460002972032644}
+  - {fileID: 514897480384689626}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &2008775773401098038
+--- !u!114 &514897480384689626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -453,9 +453,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6976504154017385922}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b344a4bed806774db042a939b03b0f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &7229611177248537121
 GameObject:
   m_ObjectHideFlags: 0

@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 7216872321230587773}
   - component: {fileID: 8654086698607925235}
   - component: {fileID: -3463772132597862313}
-  - component: {fileID: 4799099394609858042}
+  - component: {fileID: -5199085047227189259}
   m_Layer: 0
   m_Name: Mushroom
   m_TagString: Ingredient
@@ -143,7 +143,7 @@ MeshCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9123224188755346574}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 4
   m_Convex: 1
@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientType: 7
-  height: 0.004
+  height: 0.003
   isUsed: 0
   isCooked: 0
   meshObject: {fileID: 9123224189564778962}
@@ -212,7 +212,6 @@ MonoBehaviour:
   m_snapOffset: {fileID: 0}
   m_grabPoints:
   - {fileID: 9123224189564778963}
-  m_grabbedBy: {fileID: 0}
 --- !u!114 &8654086698607925235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,6 +232,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -3463772132597862313}
+  - {fileID: -5199085047227189259}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &4799099394609858042
+--- !u!114 &-5199085047227189259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -261,9 +261,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 9123224188755346574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b344a4bed806774db042a939b03b0f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &9123224188929288352
 GameObject:
   m_ObjectHideFlags: 0

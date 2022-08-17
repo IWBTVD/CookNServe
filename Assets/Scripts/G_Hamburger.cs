@@ -6,6 +6,13 @@ using TMPro;
 
 public class G_Hamburger : MonoBehaviourPun
 {
+    public enum HamburgerType
+    {
+        None,
+        CheeseBurger,
+        DoublePattyBurger,
+    }
+
     //재료를 담는 리스트
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
@@ -16,7 +23,7 @@ public class G_Hamburger : MonoBehaviourPun
 
     public bool isComplete = false;
 
-    public HamburgerType hamburgerType = HamburgerType.None;
+    public HamburgerType hamburgerType;
 
     private void Start() {
         ingredientSound = GetComponent<Y_IngredientSound>();
@@ -56,16 +63,31 @@ public class G_Hamburger : MonoBehaviourPun
 
     public void CheckHamburger()
     {
-        if(G_CompletedHamburger.CheckBurger(stackedIngredients, G_CompletedHamburger.cheeseBurger))
+        bool isWrong = false;
+        int i = 0;
+        int hamburgerIndex = 0;
+        foreach(IngredientType s in stackedIngredients)
         {
-            textMesh.gameObject.SetActive(true);
-            textMesh.text = "CheeseBurger";
+            if (s == G_CompletedHamburger.cheeseBurger[i])
+            {
+                hamburgerIndex++;
+                Debug.Log(i + " 동일함");
+            }
+            else
+            {
+                Debug.Log(i + " 다름");
+                hamburgerIndex = 0;
+            }
+
+            i++;
         }
 
-        if (G_CompletedHamburger.CheckBurger(stackedIngredients, G_CompletedHamburger.doublePattyBurger))
+        //치즈버거 완성
+        if(hamburgerIndex == 6)
         {
+            hamburgerType = HamburgerType.CheeseBurger;
+            textMesh.text = "CheeseBurger";
             textMesh.gameObject.SetActive(true);
-            textMesh.text = "DoublePattyBurger";
         }
     }
 

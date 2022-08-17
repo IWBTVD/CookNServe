@@ -23,6 +23,6 @@ public class G_OrderPaper : MonoBehaviour
 
     public void DestroyOrderPaper()
     {
-        GetComponent<G_SafeDestoy>().destroyThis();
+        Destroy(gameObject);
     }
 }
