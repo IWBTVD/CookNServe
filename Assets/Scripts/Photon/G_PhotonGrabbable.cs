@@ -11,15 +11,10 @@ public class G_PhotonGrabbable : OVRGrabbable
     private PhotonView photonView;
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Start()
     {
         photonView = GetComponent<PhotonView>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        base.Start();
     }
 
     public override void GrabBegin(OVRGrabber hand, Collider grabPoint)

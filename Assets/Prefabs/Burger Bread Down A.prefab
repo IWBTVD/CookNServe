@@ -17,6 +17,8 @@ GameObject:
   - component: {fileID: 8315493811888839700}
   - component: {fileID: 4503002940190150351}
   - component: {fileID: 6039654143832136246}
+  - component: {fileID: 8746058770192211945}
+  - component: {fileID: 165554553266345126}
   m_Layer: 0
   m_Name: Burger Bread Down A
   m_TagString: Ingredient
@@ -86,7 +88,8 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 6671984056884567041}
+  - {fileID: 165554553266345126}
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &3029812754152355512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +175,34 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &8746058770192211945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029812754152355514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}
+--- !u!64 &165554553266345126
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3029812754152355514}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 9193786007208576622, guid: 9b0582d1e9084785aeca7504a392deb9, type: 3}
 --- !u!1 &6671984056884567042
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,7 +295,7 @@ MeshCollider:
   m_GameObject: {fileID: 6671984056884567042}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30

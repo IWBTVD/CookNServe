@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 5949996017506360613}
   - component: {fileID: 1634784148968894435}
   - component: {fileID: 785755955006824360}
+  - component: {fileID: 2896254997003027622}
   m_Layer: 0
   m_Name: FrenchFries
   m_TagString: FrenchFries
@@ -135,6 +136,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &3066835778393041584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,3 +206,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myNumber: 0
+--- !u!114 &2896254997003027622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443254380216966874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}

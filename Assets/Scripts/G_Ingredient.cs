@@ -17,6 +17,7 @@ public class G_Ingredient : MonoBehaviourPun
 
     private MeshCollider triggerCollider;
     private G_PhotonGrabbable grabbable;
+    private G_SafeDestroy safeDestroy;
 
     private float timer;
     private float stackableTime = 0.5f;
@@ -28,6 +29,7 @@ public class G_Ingredient : MonoBehaviourPun
     {
         //triggerCollider = GetComponent<MeshCollider>();
         grabbable = GetComponent<G_PhotonGrabbable>();
+        safeDestroy = GetComponent<G_SafeDestroy>();
     }
 
     private void Update()
@@ -37,9 +39,8 @@ public class G_Ingredient : MonoBehaviourPun
         {
             isStackable = false;
             isGrabbed = true;
-            //triggerCollider.enabled = false;
 
-            if(transform.parent)
+            if (transform.parent)
             {
                 G_UnpackChildren unpackChildren = transform.parent.GetComponent<G_UnpackChildren>();
                 if(unpackChildren)
@@ -74,17 +75,21 @@ public class G_Ingredient : MonoBehaviourPun
     {
         if(other.gameObject.tag == "Hamburger" && isStackable && !isUsed)
         {
+            //if(grabbable.m_grabbedBy)
+                //grabbable.m_grabbedBy.ForceRelease(grabbable);
             StackHamburger(other);
         }
     }
     private void StackHamburger(Collider other)
     {
+
         G_Hamburger hamburger = other.GetComponent<G_Hamburger>();
         hamburger.StackIngredient(meshObject, height, ingredientType);
 
         isUsed = true;
-        meshObject.GetComponent<G_RemovableMeshFilter>().RemoveMeshFilter();
-        Destroy(gameObject, 2f);
+        //if (safeDestroy)
+        //safeDestroy.destroyThis();
+        Destroy(gameObject);
     }
 
     [PunRPC] void SetTimer()

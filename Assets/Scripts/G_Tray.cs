@@ -44,6 +44,7 @@ public class G_Tray : MonoBehaviourPun
         if(collision.transform.tag == "Cola")
         {
             cola.SetActive(true);
+            cola.GetComponent<G_SafeDestroy>().destroyThis();
         }
         else if(collision.transform.tag == "FrenchFries")
         {

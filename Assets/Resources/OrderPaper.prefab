@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5108231518578430367}
   - component: {fileID: 4855501839544154494}
   - component: {fileID: 4903869756820327281}
+  - component: {fileID: 9082378774021504168}
   m_Layer: 0
   m_Name: OrderPaper
   m_TagString: OrderPaper
@@ -135,6 +136,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &5108231518578430367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,6 +190,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderNumber: 0
   orderNumberText: {fileID: 3926539198121247691}
+--- !u!114 &9082378774021504168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552930255587033954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}
 --- !u!1 &5882363587164520272
 GameObject:
   m_ObjectHideFlags: 0

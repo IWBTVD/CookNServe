@@ -113,6 +113,8 @@ GameObject:
   - component: {fileID: -2710687370303235536}
   - component: {fileID: 7822540123556233910}
   - component: {fileID: 5885461920361659906}
+  - component: {fileID: -1214012038656945934}
+  - component: {fileID: 7917859425986196066}
   m_Layer: 0
   m_Name: Cheese
   m_TagString: Ingredient
@@ -211,7 +213,8 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 8119737317220304567}
+  - {fileID: 7917859425986196066}
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &-2710687370303235536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,6 +271,33 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &-1214012038656945934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8119737316407387001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}
+--- !u!65 &7917859425986196066
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8119737316407387001}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12360525, y: 0.01637265, z: 0.12228149}
+  m_Center: {x: 0, y: 0.007281199, z: -0.0006619096}
 --- !u!1 &8119737316999539716
 GameObject:
   m_ObjectHideFlags: 0
@@ -556,7 +586,7 @@ MeshCollider:
   m_GameObject: {fileID: 8119737317220304566}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30

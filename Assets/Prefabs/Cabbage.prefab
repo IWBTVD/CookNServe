@@ -486,7 +486,7 @@ MeshCollider:
   m_GameObject: {fileID: 2449762266180840481}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
@@ -524,6 +524,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2449762266526192705}
   - component: {fileID: 2449762266526192710}
+  - component: {fileID: 250819203168338949}
   - component: {fileID: 2449762266526192711}
   - component: {fileID: 2449762266526192709}
   - component: {fileID: 2449762266526192714}
@@ -531,6 +532,7 @@ GameObject:
   - component: {fileID: 2047106339527405087}
   - component: {fileID: -3150130335519791362}
   - component: {fileID: -7235574849090932312}
+  - component: {fileID: 5512744612380916365}
   m_Layer: 0
   m_Name: Cabbage
   m_TagString: Ingredient
@@ -567,6 +569,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 150815944095385738, guid: 41c50254705b424f84f1d33f15672d7c, type: 3}
+--- !u!65 &250819203168338949
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266526192715}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.12360525, y: 0.01637265, z: 0.12228149}
+  m_Center: {x: 0, y: 0.007281199, z: -0.0006619096}
 --- !u!54 &2449762266526192711
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -629,7 +644,8 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints:
-  - {fileID: 2449762266180840480}
+  - {fileID: 250819203168338949}
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &2047106339527405087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -650,6 +666,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: -3150130335519791362}
+  - {fileID: -7235574849090932312}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -685,6 +702,20 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &5512744612380916365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266526192715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}
 --- !u!1 &2449762266558081608
 GameObject:
   m_ObjectHideFlags: 0
