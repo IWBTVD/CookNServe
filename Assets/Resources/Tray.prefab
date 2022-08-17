@@ -877,14 +877,15 @@ MonoBehaviour:
   trayNumberText:
   - {fileID: 622762486}
   - {fileID: 1959092492}
-  trayOrderText: []
+  trayOrderText:
+  - {fileID: 6988731076876509828}
+  - {fileID: 4147641625709280826}
+  - {fileID: 3132635395371203089}
+  - {fileID: 2551547158438821917}
   trayNumber: 0
-  foodTransforms:
-  - {fileID: 8262349893237138834}
-  - {fileID: 8934807797558611671}
-  - {fileID: 196136065170199300}
   cola: {fileID: 196136065169944790}
   frenchFry: {fileID: 8934807797558379091}
+  orderedHamburger: 0
 --- !u!114 &3736581429999006656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1494,7 +1495,7 @@ GameObject:
   - component: {fileID: 4703391274977501993}
   - component: {fileID: 2508048257028693253}
   m_Layer: 0
-  m_Name: Socket
+  m_Name: DishSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1529,7 +1530,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Layer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 256
   Attach: {fileID: 1712063114391845202}
   HoverMat: {fileID: 2100000, guid: 45e55791eceb23548a94108bced0583d, type: 2}
   Freeze: 1
@@ -1540,6 +1541,7 @@ MonoBehaviour:
   SelectExit:
     m_PersistentCalls:
       m_Calls: []
+  isTraySocket: 0
 --- !u!65 &2508048257028693253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1548,7 +1550,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7880764605018700498}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.2, y: 0.02, z: 0.2}
@@ -1951,7 +1953,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7863828726054020431, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8217023150460191672, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: ObservedComponents.Array.size

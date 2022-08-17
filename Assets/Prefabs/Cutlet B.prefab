@@ -124,7 +124,6 @@ GameObject:
   - component: {fileID: 4397597929581392840}
   - component: {fileID: 4397597929581392837}
   - component: {fileID: 2105787723}
-  - component: {fileID: 2105787730}
   - component: {fileID: 2105787731}
   - component: {fileID: 2105787732}
   - component: {fileID: 1454993460114789046}
@@ -221,22 +220,6 @@ MonoBehaviour:
   m_grabPoints:
   - {fileID: 5939364096265652856}
   m_grabbedBy: {fileID: 0}
---- !u!114 &2105787730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4397597929581392842}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 1
-  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &2105787731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +255,7 @@ MonoBehaviour:
   OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 2105787730}
+  - {fileID: 0}
   - {fileID: 2105787731}
   sceneViewId: 0
   InstantiationId: 0
@@ -289,7 +272,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.113
   m_Pitch: 1
   Loop: 0
   Mute: 0

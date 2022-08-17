@@ -16,3 +16,10 @@ public enum IngredientType
     BurnTop,
     BurnBottom,
 }
+
+public enum HamburgerType
+{
+    None,
+    CheeseBurger,
+    DoublePattyBurger,
+}

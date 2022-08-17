@@ -27,7 +27,6 @@ public class Y_IngredientSound : MonoBehaviour
 
     public void playSound()
     {
-        audioSource.PlayOneShot(Put_Sound);
         if (timer <= 0)
         {
             audioSource.PlayOneShot(Put_Sound);

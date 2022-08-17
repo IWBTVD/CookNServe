@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 4392548973024400580}
   - component: {fileID: 2995444184962439684}
   - component: {fileID: 4166080591117389108}
-  - component: {fileID: 1625114834849573093}
   - component: {fileID: -1956211735428441104}
   m_Layer: 0
   m_Name: Cola
@@ -139,7 +138,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 2995444184962439684}
-  - {fileID: 1625114834849573093}
+  - {fileID: 0}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -175,22 +174,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1625114834849573093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5974091023526205730}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &-1956211735428441104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,3 +186,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grabbable: {fileID: 0}
+  lastGrabber: {fileID: 0}

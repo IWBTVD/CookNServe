@@ -25,6 +25,8 @@ public class G_Socket : MonoBehaviour
     private GameObject hoverObject;
     private GameObject realObject;
 
+    public bool isTraySocket = false;
+
 
     private void OnTriggerStay(Collider other)
     {
@@ -77,6 +79,9 @@ public class G_Socket : MonoBehaviour
 
             wasInSoket = true;
             count = 1;
+
+            if (isTraySocket)
+                SendHamburgerType(Target);
         }
     }
 
@@ -149,5 +154,12 @@ public class G_Socket : MonoBehaviour
             DestroyHoverObject();
 
         }
+    }
+
+    private void SendHamburgerType(GameObject obj)
+    {
+        G_Tray tray = GetComponentInParent<G_Tray>();
+
+        tray.ReceiveHamburger(obj.GetComponent<G_Hamburger>().hamburgerType);
     }
 }

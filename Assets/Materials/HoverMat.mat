@@ -15,20 +15,14 @@ MonoBehaviour:
   version: 6
 --- !u!21 &2100000
 Material:
-  serializedVersion: 8
+  serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: HoverMat
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _ALPHAPREMULTIPLY_ON
-  - _RECEIVE_SHADOWS_OFF
-  - _SURFACE_TYPE_TRANSPARENT
-  m_InvalidKeywords: []
+  m_ShaderKeywords: _RECEIVE_SHADOWS_OFF
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 1
@@ -38,7 +32,6 @@ Material:
   disabledShaderPasses:
   - DepthOnly
   - SHADOWCASTER
-  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -110,7 +103,6 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    m_Ints: []
     m_Floats:
     - _AlphaClip: 0
     - _AoIntensity: 1
@@ -159,14 +151,14 @@ Material:
     - _ReceiveShadows: 0
     - _RimFactor: 0.65
     - _Saturation: 0
-    - _Smoothness: 0.5
+    - _Smoothness: 0.6
     - _SmoothnessTextureChannel: 0
     - _Source: 0
     - _SpecularHighlights: 1
     - _SpecularIntensity: 0.2
     - _SpreadDetailMap: 0
     - _SpreadTransparentMap: 0
-    - _SrcBlend: 1
+    - _SrcBlend: 5
     - _SrcBlendAlpha: 1
     - _Stencil: 0
     - _StencilComp: 8
@@ -187,7 +179,7 @@ Material:
     - _ZWrite: 0
     - __dirty: 1
     m_Colors:
-    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.0627451}
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 0.039215688}
     - _Color: {r: 1, g: 1, b: 1, a: 0.0627451}
     - _ColorBottom: {r: 0.0137021, g: 0.0144438, b: 0.0152085, a: 1}
     - _ColorPrimary: {r: 0.396078, g: 0.72549, b: 1, a: 1}
