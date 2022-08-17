@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 3029812754152355513}
   - component: {fileID: 8315493811888839700}
   - component: {fileID: 4503002940190150351}
-  - component: {fileID: 8746058770192211945}
   - component: {fileID: 165554553266345126}
   m_Layer: 0
   m_Name: Burger Bread Down A
@@ -138,7 +137,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4503002940190150351}
-  - {fileID: 0}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -158,20 +156,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &8746058770192211945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3029812754152355514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  grabbable: {fileID: 0}
-  lastGrabber: {fileID: 0}
 --- !u!64 &165554553266345126
 MeshCollider:
   m_ObjectHideFlags: 0

@@ -7850,7 +7850,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cutlet B (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 71a96f5b81f39f14a8665ecbe1b2e8e6, type: 3}
 --- !u!1 &554180849
 GameObject:

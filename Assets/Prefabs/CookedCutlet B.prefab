@@ -125,7 +125,6 @@ GameObject:
   - component: {fileID: 3788113493200879874}
   - component: {fileID: 3788113493200879875}
   - component: {fileID: 3788113493200879876}
-  - component: {fileID: 8699351931096276927}
   m_Layer: 0
   m_Name: CookedCutlet B
   m_TagString: Ingredient
@@ -224,17 +223,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e8358244e2f7eae4bba0a59e60188b55, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8699351931096276927
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3788113493200879877}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab36cec7cdf6154cae9eeac9f8d3663, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

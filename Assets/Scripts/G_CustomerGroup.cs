@@ -11,6 +11,8 @@ public class G_CustomerGroup : MonoBehaviourPun
 
     public float stateTimer = 0f;
 
+    public float satisfaction = 120f;
+
     private void Start()
     {
         groupState = customers[0].state;
@@ -43,4 +45,5 @@ public class G_CustomerGroup : MonoBehaviourPun
         stateTimer = Random.Range(5f, 10f);
     }
     
+
 }

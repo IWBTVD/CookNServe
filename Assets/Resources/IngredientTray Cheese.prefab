@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 7100607393094079685}
   - component: {fileID: 5813596728363336969}
   - component: {fileID: 4823838307030632478}
-  - component: {fileID: 6842948105389806650}
   - component: {fileID: 808273176565488473}
   m_Layer: 0
   m_Name: IngredientTray Cheese
@@ -282,6 +281,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &5813596728363336969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +302,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 4823838307030632478}
-  - {fileID: 6842948105389806650}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -322,22 +321,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &6842948105389806650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4781021945556258078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &808273176565488473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,10 +680,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386983, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407387001, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
@@ -776,10 +767,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386983, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407387001, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
@@ -855,10 +854,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386983, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407387001, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
@@ -934,10 +941,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386981, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119737316407386983, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8119737316407387001, guid: 1d58b32240d0f3c46a21b71dfd542d31, type: 3}

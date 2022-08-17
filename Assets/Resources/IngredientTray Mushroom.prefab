@@ -204,7 +204,6 @@ GameObject:
   - component: {fileID: 7797540412906961143}
   - component: {fileID: 6778491456715270459}
   - component: {fileID: 5498250955819017260}
-  - component: {fileID: 5785727454383568904}
   - component: {fileID: 399572795225896811}
   m_Layer: 0
   m_Name: IngredientTray Mushroom
@@ -282,6 +281,7 @@ MonoBehaviour:
   m_snapOrientation: 0
   m_snapOffset: {fileID: 0}
   m_grabPoints: []
+  m_grabbedBy: {fileID: 0}
 --- !u!114 &6778491456715270459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,7 +302,6 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 5498250955819017260}
-  - {fileID: 5785727454383568904}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -322,22 +321,6 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
---- !u!114 &5785727454383568904
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5541005736052171052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SynchronizeVelocity: 1
-  m_SynchronizeAngularVelocity: 0
-  m_TeleportEnabled: 0
-  m_TeleportIfDistanceGreaterThan: 3
 --- !u!114 &399572795225896811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,10 +680,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346572, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -776,10 +767,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346572, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -855,10 +854,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346572, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
@@ -934,10 +941,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_UseGravity
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
       propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346570, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9123224188755346572, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}
+      propertyPath: isPacked
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9123224188755346574, guid: c1c63a969fcd3824f88f65cfa82200c7, type: 3}

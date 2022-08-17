@@ -18,11 +18,14 @@ public class G_Ingredient : MonoBehaviourPun
     private MeshCollider triggerCollider;
     private G_PhotonGrabbable grabbable;
     private G_SafeDestroy safeDestroy;
+    private Rigidbody rigid;
 
     private float timer;
     private float stackableTime = 0.5f;
     private bool isStackable = false;
     private bool isGrabbed = false;   //grabbable.isGrabbed보다 한프레임 늦게 켜지고 꺼짐
+
+    public bool isPacked = false;
 
 
     private void Start()
@@ -30,11 +33,12 @@ public class G_Ingredient : MonoBehaviourPun
         //triggerCollider = GetComponent<MeshCollider>();
         grabbable = GetComponent<G_PhotonGrabbable>();
         safeDestroy = GetComponent<G_SafeDestroy>();
+        rigid = GetComponent<Rigidbody>();
     }
 
     private void Update()
     {
-        
+
         if (grabbable.isGrabbed)
         {
             isStackable = false;
@@ -43,13 +47,17 @@ public class G_Ingredient : MonoBehaviourPun
             if (transform.parent)
             {
                 G_UnpackChildren unpackChildren = transform.parent.GetComponent<G_UnpackChildren>();
-                if(unpackChildren)
+                if (unpackChildren)
                 {
                     unpackChildren.UnpackChildren();
+
                 }
             }
-                
         }
+        //else if (!isPacked)
+            //rigid.isKinematic = false;
+            
+
         //잡는 즉시 한번만 실행
         if (grabbable.isGrabbed != isGrabbed)
         {
@@ -99,10 +107,4 @@ public class G_Ingredient : MonoBehaviourPun
         timer = 0f;
     }
 
-    [PunRPC] void Unpack()
-    {
-        Rigidbody r = GetComponent<Rigidbody>();
-        r.isKinematic = false;
-        r.useGravity = true;
-    }
 }

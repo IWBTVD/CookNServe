@@ -42,6 +42,9 @@ public class G_Tray : MonoBehaviourPun
         trayNumberText[0].text = trayNumber.ToString();
         trayNumberText[1].text = trayNumber.ToString();
 
+        trayOrderText[0].text = trayNumber.ToString();
+        trayOrderText[1].text = trayNumber.ToString();
+
         SetTrayText();
     }
 
