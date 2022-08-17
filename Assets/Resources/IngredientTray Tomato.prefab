@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1479711659445253340}
   - component: {fileID: 492935148006750667}
   - component: {fileID: 5697447900320967308}
+  - component: {fileID: -1839392268617374195}
   m_Layer: 0
   m_Name: IngredientTray Tomato
   m_TagString: Untagged
@@ -60,7 +61,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 3
 --- !u!65 &5171605702720407757
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -112,6 +113,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 492935148006750667}
+  - {fileID: -1839392268617374195}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -148,6 +150,22 @@ MonoBehaviour:
   - {fileID: 8420749525676666412}
   - {fileID: 6558147851281601201}
   - {fileID: 6488382501840478070}
+--- !u!114 &-1839392268617374195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 468212349887511755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 1
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &1340573206476860017
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_Interpolate
@@ -775,7 +793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_Interpolate
@@ -866,7 +884,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_Interpolate
@@ -957,7 +975,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_UseGravity
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7902945311703940736, guid: d693218d914b9044baa15966ea0971d7, type: 3}
       propertyPath: m_Interpolate
@@ -975,6 +993,14 @@ PrefabInstance:
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8062393452485271269, guid: d693218d914b9044baa15966ea0971d7, type: 3}
+      propertyPath: ObservedComponents.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062393452485271269, guid: d693218d914b9044baa15966ea0971d7, type: 3}
+      propertyPath: ObservedComponents.Array.data[1]
+      value: 
+      objectReference: {fileID: 1950911228739262623}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d693218d914b9044baa15966ea0971d7, type: 3}
 --- !u!1 &269471333943975975 stripped
@@ -987,3 +1013,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1910222364665030670, guid: d693218d914b9044baa15966ea0971d7, type: 3}
   m_PrefabInstance: {fileID: 7164346644125707749}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1950911228739262623 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: -540475671146859142, guid: d693218d914b9044baa15966ea0971d7, type: 3}
+  m_PrefabInstance: {fileID: 7164346644125707749}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269471333943975975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

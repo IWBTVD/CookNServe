@@ -531,6 +531,7 @@ GameObject:
   - component: {fileID: 912968504972901060}
   - component: {fileID: 2047106339527405087}
   - component: {fileID: -3150130335519791362}
+  - component: {fileID: -3407590183253737446}
   m_Layer: 0
   m_Name: Cabbage
   m_TagString: Ingredient
@@ -613,6 +614,7 @@ MonoBehaviour:
   isUsed: 0
   isCooked: 0
   meshObject: {fileID: 2449762266180840481}
+  isPacked: 0
 --- !u!114 &2449762266526192714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,6 +685,22 @@ MonoBehaviour:
   m_SynchronizeRotation: 1
   m_SynchronizeScale: 0
   m_UseLocal: 1
+--- !u!114 &-3407590183253737446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2449762266526192715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &2449762266558081608
 GameObject:
   m_ObjectHideFlags: 0

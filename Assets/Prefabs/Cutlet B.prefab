@@ -128,6 +128,7 @@ GameObject:
   - component: {fileID: 2105787732}
   - component: {fileID: 1454993460114789046}
   - component: {fileID: 5939364096265652856}
+  - component: {fileID: 7449471794252372616}
   m_Layer: 0
   m_Name: Cutlet B
   m_TagString: Ingredient
@@ -183,6 +184,7 @@ MonoBehaviour:
   isUsed: 0
   isCooked: 0
   meshObject: {fileID: 4397597927745790972}
+  isPacked: 0
 --- !u!114 &4397597929581392837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,3 +369,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.12360525, y: 0.01637265, z: 0.12228149}
   m_Center: {x: 0, y: 0.007281199, z: -0.0006619096}
+--- !u!114 &7449471794252372616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4397597929581392842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3

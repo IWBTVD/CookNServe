@@ -7,7 +7,7 @@ using Photon.Pun;
 using Oculus.Interaction;
 
 
-public class G_Socket : MonoBehaviour
+public class G_Socket : MonoBehaviourPun
 {
     public LayerMask Layer;
     public GameObject Attach;
@@ -134,7 +134,8 @@ public class G_Socket : MonoBehaviour
         if (hoverObject)
         {
             //Debug.LogError("Hover Inactive");
-            Destroy(hoverObject);
+            PhotonNetwork.Destroy(hoverObject);
+            //Destroy(hoverObject);
 
         }
     }

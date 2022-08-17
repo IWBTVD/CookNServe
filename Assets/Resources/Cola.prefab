@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2995444184962439684}
   - component: {fileID: 4166080591117389108}
   - component: {fileID: -1956211735428441104}
+  - component: {fileID: -2942474727680772776}
   m_Layer: 0
   m_Name: Cola
   m_TagString: Cola
@@ -138,7 +139,7 @@ MonoBehaviour:
   observableSearch: 2
   ObservedComponents:
   - {fileID: 2995444184962439684}
-  - {fileID: 0}
+  - {fileID: -2942474727680772776}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
@@ -188,3 +189,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   grabbable: {fileID: 0}
   lastGrabber: {fileID: 0}
+--- !u!114 &-2942474727680772776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5974091023526205730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 1
+  m_TeleportEnabled: 1
+  m_TeleportIfDistanceGreaterThan: 3

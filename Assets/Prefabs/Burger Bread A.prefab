@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 5170817427262908174}
   - component: {fileID: 8289151964241347353}
   - component: {fileID: 5198664287440019931}
+  - component: {fileID: -142374283075110495}
   m_Layer: 0
   m_Name: Burger Bread A
   m_TagString: Ingredient
@@ -105,6 +106,7 @@ MonoBehaviour:
   isUsed: 0
   isCooked: 0
   meshObject: {fileID: 8462191611073893038}
+  isPacked: 0
 --- !u!114 &6184506788373070352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,6 +172,22 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8824972753341642249, guid: fbe79598be3149ef985aac0a7a0fdac1, type: 3}
+--- !u!114 &-142374283075110495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5358561140421207248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
 --- !u!1 &8462191611073893038
 GameObject:
   m_ObjectHideFlags: 0

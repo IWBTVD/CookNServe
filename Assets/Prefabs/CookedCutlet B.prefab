@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 3788113493200879874}
   - component: {fileID: 3788113493200879875}
   - component: {fileID: 3788113493200879876}
+  - component: {fileID: -1120968327380368217}
   m_Layer: 0
   m_Name: CookedCutlet B
   m_TagString: Ingredient
@@ -213,6 +214,7 @@ MonoBehaviour:
   isUsed: 0
   isCooked: 0
   meshObject: {fileID: 3788113492683933457}
+  isPacked: 0
 --- !u!114 &3788113493200879876
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,3 +227,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8358244e2f7eae4bba0a59e60188b55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1120968327380368217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3788113493200879877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64179f3720bbfe947b7724caa67b7c1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SynchronizeVelocity: 1
+  m_SynchronizeAngularVelocity: 0
+  m_TeleportEnabled: 0
+  m_TeleportIfDistanceGreaterThan: 3
