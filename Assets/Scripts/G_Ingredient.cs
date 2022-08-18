@@ -85,10 +85,10 @@ public class G_Ingredient : MonoBehaviourPun
         {
             //if(grabbable.m_grabbedBy)
                 //grabbable.m_grabbedBy.ForceRelease(grabbable);
-            StackHamburger(other);
+            StackHamburger(other.gameObject);
         }
     }
-    private void StackHamburger(Collider other)
+    private void StackHamburger(GameObject other)
     {
 
         G_Hamburger hamburger = other.GetComponent<G_Hamburger>();

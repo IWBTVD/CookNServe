@@ -42,6 +42,7 @@ public class G_Hamburger : MonoBehaviourPun
         GameObject newMeshObject = Instantiate(meshObject, transform);
         newMeshObject.transform.localPosition = new Vector3(0, totalHeight, 0);
         newMeshObject.transform.localRotation = Quaternion.identity;
+        newMeshObject.transform.Rotate(new Vector3(0, Random.Range(0f, 180f), 0));
         totalHeight += height;
 
         triggerCollider.size = new Vector3(triggerCollider.size.x,
