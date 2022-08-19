@@ -13,7 +13,7 @@ public class G_IngredientSpawner : MonoBehaviourPun
 
     void Start()
     {
-        timer = 5f;
+        photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
     }
 
     void Update()
@@ -64,7 +64,12 @@ public class G_IngredientSpawner : MonoBehaviourPun
         isSpawn = false;
         IngredientPacks[i] = null;
         if (timer <= 0f)
-            timer = 5f;
+            photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
     }
 
+    [PunRPC]
+    public void SetTimer(float t)
+    {
+        timer = t;
+    }
 }
