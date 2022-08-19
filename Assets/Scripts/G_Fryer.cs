@@ -10,12 +10,15 @@ public class G_Fryer : MonoBehaviourPun
     public GameObject[] fries = new GameObject[3];
 
     public float timer = 10f;
+    public float Timer { get => timer; set => ActionRPC(nameof(SetTimerRPC), value); }
+    [PunRPC] void SetTimerRPC(float value) => timer = value;
+
     public bool isSpawn = false;
 
-    // Start is called before the first frame update
     void Start()
     {
-        timer = 10f;
+        var gameManager = FindObjectOfType<GameManager>();
+        gameManager.onGameStart.AddListener(InvokeProperties);
     }
 
     // Update is called once per frame
@@ -53,4 +56,13 @@ public class G_Fryer : MonoBehaviourPun
             timer = 5f;
     }
 
+    void ActionRPC(string functionName, object value)
+    {
+        photonView.RPC(functionName, RpcTarget.All, value);
+    }
+
+    public void InvokeProperties()
+    {
+        Timer = Timer;
+    }
 }

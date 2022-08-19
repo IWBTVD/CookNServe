@@ -8,12 +8,19 @@ public class G_IngredientSpawner : MonoBehaviourPun
     public Transform[] spawnTransforms;
     public GameObject[] IngredientPacks = new GameObject[10];
 
-    public float timer = 5f;
+
+    public float timer = 10f;
+    public float Timer { get => timer; set => ActionRPC(nameof(SetTimerRPC), value);}
+    [PunRPC] void SetTimerRPC(float value) => timer = value;
+
+
     public bool isSpawn = false;
 
     void Start()
     {
-        photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
+        //photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
+        var gameManager = FindObjectOfType<GameManager>();
+        gameManager.onGameStart.AddListener(InvokeProperties);
     }
 
     void Update()
@@ -71,5 +78,15 @@ public class G_IngredientSpawner : MonoBehaviourPun
     public void SetTimer(float t)
     {
         timer = t;
+    }
+
+    void ActionRPC(string functionName, object value)
+    {
+        photonView.RPC(functionName, RpcTarget.All, value);
+    }
+
+    public void InvokeProperties()
+    {
+        Timer = Timer;
     }
 }

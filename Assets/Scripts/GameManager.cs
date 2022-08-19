@@ -4,16 +4,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 override 사용해 코드 작성해야됨
 {
+    public UnityEvent onGameStart;
+
     private string gameVersion = "1"; // 같은 버전끼리 매칭하기 위해 string 사용 숫자뿐만 아닌 다른 것도 사용 가능
 
     public PlayerSpawner playerSpawner;
 
     public G_Seat[] seatArray;
 
-
+    public GameObject[] objectsThatNeedProperties;
 
     private void Start()
     {
@@ -21,7 +24,6 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
         PhotonNetwork.GameVersion = gameVersion;
         // 설정한 정보로 마스터 서버 접속 시도
         PhotonNetwork.ConnectUsingSettings();
-
     }
 
     public override void OnConnectedToMaster()
@@ -32,6 +34,17 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
     public override void OnJoinedRoom()
     {
         playerSpawner.SpawnPlayer();
+    }
+
+    public override void OnPlayerEnteredRoom(Player newPlayer)
+    {
+        if (newPlayer != PhotonNetwork.LocalPlayer)
+        {
+            foreach(GameObject obj in objectsThatNeedProperties)
+            {
+                //obj.
+            }
+        }
     }
 
     //의자 배열에서 빈 의자 찾기
