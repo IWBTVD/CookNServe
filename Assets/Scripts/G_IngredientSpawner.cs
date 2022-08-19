@@ -5,22 +5,28 @@ using Photon.Pun;
 
 public class G_IngredientSpawner : MonoBehaviourPun
 {
+    private static G_IngredientSpawner spawnerInstance;
+
     public Transform[] spawnTransforms;
     public GameObject[] IngredientPacks = new GameObject[10];
-
 
     public float timer = 10f;
     public float Timer { get => timer; set => ActionRPC(nameof(SetTimerRPC), value);}
     [PunRPC] void SetTimerRPC(float value) => timer = value;
 
-
     public bool isSpawn = false;
+
+    private void Awake()
+    {
+        if (spawnerInstance == null)
+            spawnerInstance = this;
+        else
+            this.enabled = false;
+    }
 
     void Start()
     {
-        //photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
-        var gameManager = FindObjectOfType<GameManager>();
-        gameManager.onGameStart.AddListener(InvokeProperties);
+        Timer = Timer;
     }
 
     void Update()
@@ -35,35 +41,38 @@ public class G_IngredientSpawner : MonoBehaviourPun
 
     public void CreateIngredient()
     {
-        int i = 0;
-        foreach (GameObject obj in IngredientPacks)
+        if (photonView.IsMine)
         {
-            if (!obj)
+            int i = 0;
+            foreach (GameObject obj in IngredientPacks)
             {
-                string packName;
-                switch(i)
+                if (!obj)
                 {
-                    case 0: packName = "IngredientTray Cabbage"; break;
-                    case 1: packName = "IngredientTray Cabbage"; break;
-                    case 2: packName = "IngredientTray Cheese"; break;
-                    case 3: packName = "IngredientTray Cheese"; break;
-                    case 4: packName = "IngredientTray Cutlet"; break;
-                    case 5: packName = "IngredientTray Cutlet"; break;
-                    case 6: packName = "IngredientTray Mushroom"; break;
-                    case 7: packName = "IngredientTray Mushroom"; break;
-                    case 8: packName = "IngredientTray Tomato"; break;
-                    case 9: packName = "IngredientTray Tomato"; break;
-                    default: packName = "IngredientTray Cabbage"; break;
-                }
+                    string packName;
+                    switch (i)
+                    {
+                        case 0: packName = "IngredientTray Cabbage"; break;
+                        case 1: packName = "IngredientTray Cabbage"; break;
+                        case 2: packName = "IngredientTray Cheese"; break;
+                        case 3: packName = "IngredientTray Cheese"; break;
+                        case 4: packName = "IngredientTray Cutlet"; break;
+                        case 5: packName = "IngredientTray Cutlet"; break;
+                        case 6: packName = "IngredientTray Mushroom"; break;
+                        case 7: packName = "IngredientTray Mushroom"; break;
+                        case 8: packName = "IngredientTray Tomato"; break;
+                        case 9: packName = "IngredientTray Tomato"; break;
+                        default: packName = "IngredientTray Cabbage"; break;
+                    }
 
-                IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
-                IngredientPacks[i].transform.parent = transform;
-                IngredientPacks[i].GetComponent<G_IngredientPack>().myNumber = i;
-                IngredientPacks[i].GetComponent<G_IngredientPack>().isCreated = true;
+                    IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
+                    IngredientPacks[i].transform.parent = transform;
+                    IngredientPacks[i].GetComponent<G_IngredientPack>().myNumber = i;
+                    IngredientPacks[i].GetComponent<G_IngredientPack>().isCreated = true;
+                }
+                i++;
+                isSpawn = true;
             }
-            i++;
-            isSpawn = true;
-        }
+        }  
     }
 
     public void CreateIngredient(int i)

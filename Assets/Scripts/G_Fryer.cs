@@ -5,6 +5,8 @@ using Photon.Pun;
 
 public class G_Fryer : MonoBehaviourPun
 {
+    private static G_Fryer fryerInstance;
+
     public Transform[] spawnPoint;
 
     public GameObject[] fries = new GameObject[3];
@@ -15,10 +17,17 @@ public class G_Fryer : MonoBehaviourPun
 
     public bool isSpawn = false;
 
+    private void Awake()
+    {
+        if (fryerInstance == null)
+            fryerInstance = this;
+        else
+            this.enabled = false;
+    }
+
     void Start()
     {
-        var gameManager = FindObjectOfType<GameManager>();
-        gameManager.onGameStart.AddListener(InvokeProperties);
+        Timer = Timer;
     }
 
     // Update is called once per frame
@@ -34,18 +43,21 @@ public class G_Fryer : MonoBehaviourPun
 
     public void CreateFry()
     {
-        int i = 0;
-        foreach (GameObject f in fries)
+        if(photonView.IsMine)
         {
-            if(!f)
+            int i = 0;
+            foreach (GameObject f in fries)
             {
-                fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
-                fries[i].transform.parent = transform;
-                fries[i].GetComponent<G_FrenchFry>().myNumber = i;
+                if (!f)
+                {
+                    fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
+                    fries[i].transform.parent = transform;
+                    fries[i].GetComponent<G_FrenchFry>().myNumber = i;
+                }
+                i++;
+                isSpawn = true;
             }
-            i++;
-            isSpawn = true;
-        }
+        } 
     }
 
     public void GrabFrenchFry(int i)
@@ -61,8 +73,4 @@ public class G_Fryer : MonoBehaviourPun
         photonView.RPC(functionName, RpcTarget.All, value);
     }
 
-    public void InvokeProperties()
-    {
-        Timer = Timer;
-    }
 }

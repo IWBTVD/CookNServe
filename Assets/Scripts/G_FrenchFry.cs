@@ -16,6 +16,7 @@ public class G_FrenchFry : MonoBehaviour
     {
         grabbable = GetComponent<G_PhotonGrabbable>();
         fryer = transform.parent.GetComponent<G_Fryer>();
+        
     }
 
     // Update is called once per frame
