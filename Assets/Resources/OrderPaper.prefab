@@ -190,6 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   orderNumber: 0
   orderNumberText: {fileID: 3926539198121247691}
+  mySeat: {fileID: 0}
 --- !u!114 &9082378774021504168
 MonoBehaviour:
   m_ObjectHideFlags: 0

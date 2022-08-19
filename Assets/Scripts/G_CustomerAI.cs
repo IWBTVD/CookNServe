@@ -35,6 +35,9 @@ public class G_CustomerAI : MonoBehaviour
     private bool isLeaderSit = false;
     private bool isStateDone = false;
 
+    public bool isTakenOrder = false;
+    public bool isServed = false;
+
     private void Awake()
     {
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
@@ -134,15 +137,23 @@ public class G_CustomerAI : MonoBehaviour
         }
     }
 
-    
+    //주문서 생성 상태
     private void BeReadyToOrder()
     {
-        
+        //주문 받으면 다음상태 이동
+        if (isTakenOrder)
+        {
+            anim.SetBool("isReadyToOrder", false);
+            state = State.WaitingForMeal;
+        }
     }
 
     private void WaitForMeal()
     {
+        if(isServed)
+        {
 
+        }
     }
 
     private void Eat()

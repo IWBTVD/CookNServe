@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 3698384481595231772}
   - component: {fileID: 8833083193140649307}
   - component: {fileID: 1763636200421156484}
+  - component: {fileID: -4433332677028521033}
   m_Layer: 0
   m_Name: IngredientTray Cutlet
   m_TagString: Untagged
@@ -451,6 +452,20 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &-4433332677028521033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3745693438982277916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d3d5d4e16bd724ea1ab09be1170cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCreated: 0
+  myNumber: 0
 --- !u!1 &5492657094846603261
 GameObject:
   m_ObjectHideFlags: 0

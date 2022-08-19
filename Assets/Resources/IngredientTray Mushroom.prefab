@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 5498250955819017260}
   - component: {fileID: 399572795225896811}
   - component: {fileID: -2260424649593349227}
+  - component: {fileID: -6800307301028900781}
   m_Layer: 0
   m_Name: IngredientTray Mushroom
   m_TagString: Untagged
@@ -356,6 +357,20 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &-6800307301028900781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5541005736052171052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d3d5d4e16bd724ea1ab09be1170cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCreated: 0
+  myNumber: 0
 --- !u!1 &6341169156850841494
 GameObject:
   m_ObjectHideFlags: 0

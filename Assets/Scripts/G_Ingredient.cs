@@ -25,8 +25,7 @@ public class G_Ingredient : MonoBehaviourPun
     private bool isStackable = false;
     private bool isGrabbed = false;   //grabbable.isGrabbed보다 한프레임 늦게 켜지고 꺼짐
 
-    public bool isPacked = false;
-
+    public bool isPacked = true;
 
     private void Start()
     {

@@ -958,7 +958,7 @@ GameObject:
   - component: {fileID: 2717936562900504265}
   - component: {fileID: 6797661942780539514}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: MenuCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

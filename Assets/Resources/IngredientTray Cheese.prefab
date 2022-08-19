@@ -206,6 +206,7 @@ GameObject:
   - component: {fileID: 4823838307030632478}
   - component: {fileID: 808273176565488473}
   - component: {fileID: -8562788038341297969}
+  - component: {fileID: 1271752391980325808}
   m_Layer: 0
   m_Name: IngredientTray Cheese
   m_TagString: Untagged
@@ -360,6 +361,20 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 1
   m_TeleportEnabled: 1
   m_TeleportIfDistanceGreaterThan: 3
+--- !u!114 &1271752391980325808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4781021945556258078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d3d5d4e16bd724ea1ab09be1170cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCreated: 0
+  myNumber: 0
 --- !u!1 &6249970149155216292
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,6 +18,7 @@ TagManager:
   - FrenchFries
   - Tray
   - RoomLight
+  - Seat
   layers:
   - Default
   - TransparentFX

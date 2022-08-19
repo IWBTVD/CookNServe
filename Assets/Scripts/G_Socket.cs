@@ -92,8 +92,8 @@ public class G_Socket : MonoBehaviourPun
         if (hoverObject == null && wasInSoket == false)
         {
             //Debug.LogError("Hover Active");
-            hoverObject = PhotonNetwork.Instantiate(Target.name, Attach.transform.position, Attach.transform.rotation);
-            //hoverObject = Instantiate(Target, Attach.transform.position, Attach.transform.rotation);
+            //hoverObject = PhotonNetwork.Instantiate(Target.name, Attach.transform.position, Attach.transform.rotation);
+            hoverObject = Instantiate(Target, Attach.transform.position, Attach.transform.rotation);
             hoverObject.transform.parent = Attach.transform;
             hoverObject.layer = 0;
 

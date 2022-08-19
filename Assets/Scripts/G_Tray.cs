@@ -18,6 +18,8 @@ public class G_Tray : MonoBehaviourPun
 
     public HamburgerType orderedHamburger;
 
+    private G_Seat mySeat;
+
     private bool isHamburgerServed; //햄버거 놔졌는가!
     private bool isFrenchFryServed; //감튀 놔졌는가!
     private bool isColaServed;      //콜라 놔졌는가!
@@ -32,7 +34,7 @@ public class G_Tray : MonoBehaviourPun
     }
 
     //OrderPaper에서 사용됨
-    public void SetTrayNumber(int n)
+    public void SetTrayNumber(int n, G_Seat seat)
     {
         //햄버거 랜덤으로 선정
         orderedHamburger = (HamburgerType)Random.Range(1, 2);
@@ -42,8 +44,8 @@ public class G_Tray : MonoBehaviourPun
         trayNumberText[0].text = trayNumber.ToString();
         trayNumberText[1].text = trayNumber.ToString();
 
-        trayOrderText[0].text = trayNumber.ToString();
-        trayOrderText[1].text = trayNumber.ToString();
+        trayOrderText[0].text = "Order " + trayNumber.ToString();
+        trayOrderText[1].text = "Order" + trayNumber.ToString();
 
         SetTrayText();
     }
@@ -57,6 +59,11 @@ public class G_Tray : MonoBehaviourPun
         else if(collision.transform.tag == "FrenchFries")
         {
             photonView.RPC(nameof(PlaceFrenchFry), RpcTarget.All);
+        }
+
+        if(collision.transform.tag == "Seat")
+        {
+
         }
     }
 

@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using TMPro;
 
 public class G_CustomerGroup : MonoBehaviourPun
 {
     public G_CustomerAI.State groupState;
-
     public G_CustomerAI[] customers;
 
     public float stateTimer = 0f;
-
     public float satisfaction = 120f;
+
+    public TextMeshPro satisfactionText;
+
+    private bool isFoodServed;
 
     private void Start()
     {
@@ -45,5 +48,17 @@ public class G_CustomerGroup : MonoBehaviourPun
         stateTimer = Random.Range(5f, 10f);
     }
     
+    //주문 받아서 기다리는 상태
+    public void WaitForMeal()
+    {
+        foreach (G_CustomerAI c in customers)
+        {
+            c.isTakenOrder = true;
+        }
+    }
 
+    public void ServedFood()
+    {
+
+    }
 }
