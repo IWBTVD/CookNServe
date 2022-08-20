@@ -1,0 +1,413 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6593648334642760425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6593648334642760438}
+  - component: {fileID: 6593648334642760437}
+  - component: {fileID: 6593648334642760436}
+  - component: {fileID: 6593648334642760439}
+  m_Layer: 0
+  m_Name: BurnTray Bottom (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6593648334642760438
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593648334642760425}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.12, y: -0.646, z: 0.38}
+  m_LocalScale: {x: 0.5654, y: -0.01, z: 0.46}
+  m_Children:
+  - {fileID: 8182291326114780114}
+  - {fileID: 8182291327581190733}
+  - {fileID: 8182291326069643516}
+  - {fileID: 8182291326717557640}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &6593648334642760437
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593648334642760425}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6593648334642760436
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593648334642760425}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6593648334642760439
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6593648334642760425}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &6593648333882953012
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6593648334642760438}
+    m_Modifications:
+    - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Name
+      value: Burger Bread Down A (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7686594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.173913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.1538738
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.31739137
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!4 &8182291326717557640 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 6593648333882953012}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6593648334237789760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6593648334642760438}
+    m_Modifications:
+    - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Name
+      value: Burger Bread Down A (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7686594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.173913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.17686556
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.06304331
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!4 &8182291326069643516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 6593648334237789760}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6593648334352033134
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6593648334642760438}
+    m_Modifications:
+    - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Name
+      value: Burger Bread Down A (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7686594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.173913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.24938081
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.2999952
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.24347849
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!4 &8182291326114780114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 6593648334352033134}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6593648335277427953
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6593648334642760438}
+    m_Modifications:
+    - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Name
+      value: Burger Bread Down A (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7686594
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.173913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.20870207
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.3000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.15434778
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!4 &8182291327581190733 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 6593648335277427953}
+  m_PrefabAsset: {fileID: 0}
