@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
-public class Y_ : MonoBehaviour
+public class Y_broomDelete : MonoBehaviour
 {
     float timer = 0;
     private OVRGrabbable grabbable;
