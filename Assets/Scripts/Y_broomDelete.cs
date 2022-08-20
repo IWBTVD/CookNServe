@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
 
-public class Y_broomDelete : MonoBehaviour
+public class Y_BroomDelete : MonoBehaviour
 {
     public float timer = 0;
 
