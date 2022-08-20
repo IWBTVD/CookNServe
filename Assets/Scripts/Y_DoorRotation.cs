@@ -49,12 +49,6 @@ public class Y_DoorRotation : MonoBehaviour
             }
         }
     }
-    private void OnCollisionExit(Collision other) {
-        callOpen = true;
-        if(callOpen){
-                callOpen = false;
-        }
-    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
