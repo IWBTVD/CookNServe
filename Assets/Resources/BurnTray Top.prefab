@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8862459722023157746}
   - component: {fileID: 8862459722023157745}
   - component: {fileID: 8862459722023157744}
+  - component: {fileID: 1583498300585318172}
   m_Layer: 0
   m_Name: BurnTray Top
   m_TagString: Untagged
@@ -99,6 +100,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1583498300585318172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8862459722023157758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca9021bcfb9ca14f8a17ac1e801c5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: 3503983982627209911}
+  - {fileID: 3503983982677016157}
+  - {fileID: 3503983984633751807}
+  - {fileID: 3503983984561851445}
 --- !u!1001 &8862459720564418789
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106,6 +124,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8862459722023157759}
     m_Modifications:
+    - target: {fileID: 3958267629117154842, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -170,8 +192,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread A (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6184506788373070352, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460122908973104244, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+--- !u!1 &3503983984561851445 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358561140421207248, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+  m_PrefabInstance: {fileID: 8862459720564418789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4185692988821711927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
@@ -184,6 +219,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8862459722023157759}
     m_Modifications:
+    - target: {fileID: 3958267629117154842, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -248,8 +287,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread A (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6184506788373070352, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460122908973104244, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+--- !u!1 &3503983984633751807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358561140421207248, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+  m_PrefabInstance: {fileID: 8862459720636828719}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4185692988883110141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
@@ -262,6 +314,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8862459722023157759}
     m_Modifications:
+    - target: {fileID: 3958267629117154842, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -326,8 +382,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread A
       objectReference: {fileID: 0}
+    - target: {fileID: 6184506788373070352, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460122908973104244, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+--- !u!1 &3503983982627209911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358561140421207248, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+  m_PrefabInstance: {fileID: 8862459721851070055}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4185692989011485365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
@@ -340,6 +409,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 8862459722023157759}
     m_Modifications:
+    - target: {fileID: 3958267629117154842, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -404,8 +477,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Burger Bread A (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6184506788373070352, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460122908973104244, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+--- !u!1 &3503983982677016157 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5358561140421207248, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}
+  m_PrefabInstance: {fileID: 8862459721900857997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4185692989095878239 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4677931257416156370, guid: 5be30eb4ecfcc044ba2cd4258e94b099, type: 3}

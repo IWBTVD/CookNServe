@@ -60,6 +60,7 @@ public class G_Hamburger : MonoBehaviourPun
         //치즈버거 완성?
         if(G_CompletedHamburger.CheckHamburger(stackedIngredients, G_CompletedHamburger.cheeseBurger))
         {
+            isComplete = true;
             hamburgerType = HamburgerType.CheeseBurger;
             textMesh.text = "CheeseBurger";
             textMesh.gameObject.SetActive(true);
@@ -67,9 +68,18 @@ public class G_Hamburger : MonoBehaviourPun
 
         if (G_CompletedHamburger.CheckHamburger(stackedIngredients, G_CompletedHamburger.doublePattyBurger))
         {
+            isComplete = true;
             hamburgerType = HamburgerType.DoublePattyBurger;
             textMesh.text = "DoublePattyBurger";
             textMesh.gameObject.SetActive(true);
         }
+        
+
+        if(hamburgerType != HamburgerType.None && !isComplete)
+        {
+            hamburgerType = HamburgerType.None;
+            textMesh.gameObject.SetActive(false);
+        }
+
     }
 }

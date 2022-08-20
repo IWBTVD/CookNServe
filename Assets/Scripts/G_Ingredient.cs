@@ -25,7 +25,7 @@ public class G_Ingredient : MonoBehaviourPun
     private bool isStackable = false;
     private bool isGrabbed = false;   //grabbable.isGrabbed보다 한프레임 늦게 켜지고 꺼짐
 
-    public bool isPacked = true;
+    public bool isPacked;
 
     private void Start()
     {
@@ -33,6 +33,11 @@ public class G_Ingredient : MonoBehaviourPun
         grabbable = GetComponent<G_PhotonGrabbable>();
         safeDestroy = GetComponent<G_SafeDestroy>();
         rigid = GetComponent<Rigidbody>();
+
+        if(isPacked)
+        {
+            rigid.isKinematic = true;
+        }
     }
 
     private void Update()
@@ -53,8 +58,8 @@ public class G_Ingredient : MonoBehaviourPun
                 }
             }
         }
-        //else if (!isPacked)
-            //rigid.isKinematic = false;
+        else if (!isPacked && rigid.isKinematic)
+            rigid.isKinematic = false;
             
 
         //잡는 즉시 한번만 실행

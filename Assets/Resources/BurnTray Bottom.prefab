@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1470272193660983635}
   - component: {fileID: 1470272193660983634}
   - component: {fileID: 1470272193660983645}
+  - component: {fileID: 2030736138589468877}
   m_Layer: 0
   m_Name: BurnTray Bottom
   m_TagString: Untagged
@@ -99,6 +100,23 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2030736138589468877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470272193660983647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca9021bcfb9ca14f8a17ac1e801c5bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: 4497823207788864603}
+  - {fileID: 4497823209570974085}
+  - {fileID: 4497823209097104914}
+  - {fileID: 4497823209735826917}
 --- !u!1001 &1470272193655050977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106,6 +124,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470272193660983644}
     m_Modifications:
+    - target: {fileID: 3029812754152355512, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355513, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: m_Name
       value: Burger Bread Down A
@@ -166,12 +192,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355518, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!1 &4497823207788864603 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 1470272193655050977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4497823207788864605 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
@@ -184,6 +219,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470272193660983644}
     m_Modifications:
+    - target: {fileID: 3029812754152355512, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355513, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: m_Name
       value: Burger Bread Down A (3)
@@ -244,12 +287,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355518, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!1 &4497823209735826917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 1470272193991367519}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4497823209735826915 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
@@ -262,6 +314,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470272193660983644}
     m_Modifications:
+    - target: {fileID: 3029812754152355512, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355513, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: m_Name
       value: Burger Bread Down A (1)
@@ -322,12 +382,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355518, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!1 &4497823209570974085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 1470272194424524607}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4497823209570974083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
@@ -340,6 +409,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1470272193660983644}
     m_Modifications:
+    - target: {fileID: 3029812754152355512, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: isPacked
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355513, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: m_Name
       value: Burger Bread Down A (2)
@@ -400,12 +477,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3029812754152355518, guid: 11111761f1831114ba544f19104705dd, type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8315493811888839700, guid: 11111761f1831114ba544f19104705dd, type: 3}
       propertyPath: sceneViewId
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11111761f1831114ba544f19104705dd, type: 3}
+--- !u!1 &4497823209097104914 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3029812754152355514, guid: 11111761f1831114ba544f19104705dd, type: 3}
+  m_PrefabInstance: {fileID: 1470272194487482536}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4497823209097104916 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3029812754152355516, guid: 11111761f1831114ba544f19104705dd, type: 3}
