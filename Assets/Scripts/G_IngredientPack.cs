@@ -27,7 +27,7 @@ public class G_IngredientPack : MonoBehaviour
             {
                 transform.parent = null;
                 isCreated = false;
-                spawner.CreateIngredient(myNumber);
+                spawner.ActivateSpawner(myNumber);
             }
         }
     }

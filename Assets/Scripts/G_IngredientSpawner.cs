@@ -10,6 +10,8 @@ public class G_IngredientSpawner : MonoBehaviourPun
     public Transform[] spawnTransforms;
     public GameObject[] IngredientPacks = new GameObject[10];
 
+    public GameObject[] prefabs;
+
     public float timer = 10f;
     public float Timer { get => timer; set => ActionRPC(nameof(SetTimerRPC), value);}
     [PunRPC] void SetTimerRPC(float value) => timer = value;
@@ -64,7 +66,9 @@ public class G_IngredientSpawner : MonoBehaviourPun
                         default: packName = "IngredientTray Cabbage"; break;
                     }
 
-                    IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
+                    //IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
+
+                    IngredientPacks[i] = Instantiate(prefabs[i/2], spawnTransforms[i].position, Quaternion.identity);
                     IngredientPacks[i].transform.parent = transform;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().myNumber = i;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().isCreated = true;
@@ -75,7 +79,7 @@ public class G_IngredientSpawner : MonoBehaviourPun
         }  
     }
 
-    public void CreateIngredient(int i)
+    public void ActivateSpawner(int i)
     {
         isSpawn = false;
         IngredientPacks[i] = null;

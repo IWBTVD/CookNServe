@@ -28,7 +28,8 @@ public class G_FrenchFry : MonoBehaviour
             {
                 transform.parent = null;
                 isCreated = false;
-                fryer.GrabFrenchFry(myNumber);
+                if(fryer)
+                    fryer.GrabFrenchFry(myNumber);
             } 
         }
     }
