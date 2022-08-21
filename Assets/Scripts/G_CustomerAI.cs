@@ -37,6 +37,8 @@ public class G_CustomerAI : MonoBehaviour
 
     public bool isTakenOrder = false;
     public bool isServed = false;
+    public bool isEatFinished = false;
+    public bool isWaitingForPay = false;
 
     private void Awake()
     {
@@ -152,7 +154,8 @@ public class G_CustomerAI : MonoBehaviour
     {
         if(isServed)
         {
-
+            state = State.Eating;
+            anim.SetBool("isEating", true);
         }
     }
 

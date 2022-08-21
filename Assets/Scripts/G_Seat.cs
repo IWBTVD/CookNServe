@@ -38,4 +38,25 @@ public class G_Seat : MonoBehaviourPun
     {
         myGroup.WaitForMeal();
     }
+
+    public void ServedFood(GameObject trayObject)
+    {
+        foreach(Transform t in tableTransforms)
+        {
+            Instantiate(trayObject, t.position, t.rotation);
+            myGroup.ServedFood();
+        }
+    }
+
+    public void SetGroup(G_CustomerGroup g)
+    {
+        myGroup = g;
+        //photonView.RPC(nameof(SetGroupRPC), RpcTarget.AllBuffered, g);
+    }
+
+    //[PunRPC]
+    //public void SetGroupRPC(G_CustomerGroup g)
+    //{
+    //    myGroup = g;
+    //}
 }

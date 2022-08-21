@@ -30,11 +30,7 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
 
     public G_Seat[] seatArray;
 
-    public GameObject[] objectsThatNeedProperties;
-
     public GameObject[] ActiveWhenGameStart;
-
-    public G_Fryer fryer;
 
     private void Start()
     {
@@ -58,10 +54,7 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
     {
         if (newPlayer != PhotonNetwork.LocalPlayer)
         {
-            foreach(GameObject obj in objectsThatNeedProperties)
-            {
-                //obj.
-            }
+
         }
     }
 

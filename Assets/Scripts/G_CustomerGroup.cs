@@ -32,6 +32,7 @@ public class G_CustomerGroup : MonoBehaviourPun
     //리더가 테이블에 도착하면 나머지 고객도 앉음
     public void SitOnTheSeat(G_Seat seat)
     {
+        seat.SetGroup(this);
         foreach (G_CustomerAI c in customers)
         {
             if (!c.isLeader)
@@ -59,6 +60,13 @@ public class G_CustomerGroup : MonoBehaviourPun
 
     public void ServedFood()
     {
+        foreach(G_CustomerAI c in customers)
+        {
+            c.isServed = true;
+        }
+        if(stateTimer <= 0)
+        {
 
+        }
     }
 }

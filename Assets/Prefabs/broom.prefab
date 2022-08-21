@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 3633317682201616085}
   - component: {fileID: 3633317682201616082}
   - component: {fileID: 3633317682201616083}
-  - component: {fileID: 6823616801000962286}
+  - component: {fileID: 9048880941067699546}
   m_Layer: 0
   m_Name: broom
   m_TagString: Untagged
@@ -193,7 +193,7 @@ MonoBehaviour:
   m_SynchronizeAngularVelocity: 0
   m_TeleportEnabled: 0
   m_TeleportIfDistanceGreaterThan: 3
---- !u!114 &6823616801000962286
+--- !u!114 &9048880941067699546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -205,4 +205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e108e163bcf244787eac95c7d0f335, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectTransform: {fileID: 0}
+  timer: 0
+  originalTransform: {fileID: 0}
+  isAbandoned: 0

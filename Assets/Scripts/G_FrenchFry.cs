@@ -15,7 +15,7 @@ public class G_FrenchFry : MonoBehaviour
     void Start()
     {
         grabbable = GetComponent<G_PhotonGrabbable>();
-        fryer = transform.parent.GetComponent<G_Fryer>();
+        fryer = FindObjectOfType<G_Fryer>();
         
     }
 
@@ -37,6 +37,6 @@ public class G_FrenchFry : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.transform.tag == "Tray")
-            GetComponent<G_SafeDestroy>().destroyThis();
+            Destroy(gameObject);
     }
 }

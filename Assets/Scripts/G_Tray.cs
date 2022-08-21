@@ -63,7 +63,12 @@ public class G_Tray : MonoBehaviourPun
 
         if(collision.transform.tag == "Seat")
         {
-
+            G_Seat seat = collision.transform.GetComponent<G_Seat>();
+            //서빙 조건 만족
+            if(isColaServed && isFrenchFryServed && isHamburgerServed && trayNumber == seat.seatNumber)
+            {
+                seat.ServedFood(gameObject);
+            }
         }
     }
 
@@ -102,7 +107,7 @@ public class G_Tray : MonoBehaviourPun
         isHamburgerServed = b;
         SetTrayText();
     }
-
+    
     public void SetTrayText()
     {
         string orderDetailText = orderedHamburger.ToString() + " " + (isHamburgerServed ? "O" : "X")

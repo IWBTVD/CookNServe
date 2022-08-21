@@ -134,7 +134,7 @@ public class G_Socket : MonoBehaviourPun
         if (hoverObject)
         {
             //Debug.LogError("Hover Inactive");
-            PhotonNetwork.Destroy(hoverObject);
+            Destroy(hoverObject);
             //Destroy(hoverObject);
 
         }

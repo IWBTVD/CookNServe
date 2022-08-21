@@ -5,25 +5,17 @@ using Photon.Pun;
 
 public class G_Fryer : MonoBehaviourPun
 {
-    private static G_Fryer fryerInstance;
-
     public Transform[] spawnPoint;
 
     public GameObject[] fries = new GameObject[3];
+
+    public GameObject fryPrefab;
 
     public float timer = 10f;
     public float Timer { get => timer; set => ActionRPC(nameof(SetTimerRPC), value); }
     [PunRPC] void SetTimerRPC(float value) => timer = value;
 
     public bool isSpawn = false;
-
-    private void Awake()
-    {
-        if (fryerInstance == null)
-            fryerInstance = this;
-        else
-            this.enabled = false;
-    }
 
     void Start()
     {
@@ -37,10 +29,11 @@ public class G_Fryer : MonoBehaviourPun
         {
             timer -= Time.deltaTime;
         }
-        if(timer <= 0f && !isSpawn)
-            CreateFry();
+        if (timer <= 0f && !isSpawn)
+            photonView.RPC(nameof(CreateFry), RpcTarget.AllBuffered);
     }
 
+    [PunRPC]
     public void CreateFry()
     {
         if(photonView.IsMine)
@@ -50,7 +43,8 @@ public class G_Fryer : MonoBehaviourPun
             {
                 if (!f)
                 {
-                    fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
+                    fries[i] = Instantiate(fryPrefab, spawnPoint[i].position, spawnPoint[i].rotation);
+                    //fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
                     fries[i].transform.parent = transform;
                     fries[i].GetComponent<G_FrenchFry>().myNumber = i;
                 }
@@ -65,7 +59,13 @@ public class G_Fryer : MonoBehaviourPun
         isSpawn = false;
         fries[i] = null;
         if(timer <= 0f)
-            timer = 5f;
+            photonView.RPC(nameof(SetTimer), RpcTarget.All, 5f);
+    }
+
+    [PunRPC]
+    public void SetTimer(float t)
+    {
+        timer = t;
     }
 
     void ActionRPC(string functionName, object value)
