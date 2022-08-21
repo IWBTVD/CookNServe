@@ -15,7 +15,7 @@ public class G_IngredientPack : MonoBehaviour
     void Start()
     {
         grabbable = GetComponent<G_PhotonGrabbable>();
-        spawner = transform.parent.GetComponent<G_IngredientSpawner>(); 
+        spawner = FindObjectOfType<G_IngredientSpawner>();
     }
 
     // Update is called once per frame

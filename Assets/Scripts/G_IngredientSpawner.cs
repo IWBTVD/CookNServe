@@ -33,19 +33,17 @@ public class G_IngredientSpawner : MonoBehaviourPun
 
     void Update()
     {
-        if (timer >= 0)
-        {
-            timer -= Time.deltaTime;
-        }
-        if (timer <= 0f && !isSpawn)
-            CreateIngredient();
+        //if (timer >= 0)
+        //{
+        //    timer -= Time.deltaTime;
+        //}
+        //if (timer <= 0f && !isSpawn)
+        //    CreateIngredient();
     }
 
     public void CreateIngredient()
     {
-        if (photonView.IsMine)
-        {
-            int i = 0;
+        int i = 0;
             foreach (GameObject obj in IngredientPacks)
             {
                 if (!obj)
@@ -66,9 +64,9 @@ public class G_IngredientSpawner : MonoBehaviourPun
                         default: packName = "IngredientTray Cabbage"; break;
                     }
 
-                    //IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
+                    IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
 
-                    IngredientPacks[i] = Instantiate(prefabs[i/2], spawnTransforms[i].position, Quaternion.identity);
+                    //IngredientPacks[i] = Instantiate(prefabs[i/2], spawnTransforms[i].position, Quaternion.identity);
                     IngredientPacks[i].transform.parent = transform;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().myNumber = i;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().isCreated = true;
@@ -76,7 +74,6 @@ public class G_IngredientSpawner : MonoBehaviourPun
                 i++;
                 isSpawn = true;
             }
-        }  
     }
 
     public void ActivateSpawner(int i)
