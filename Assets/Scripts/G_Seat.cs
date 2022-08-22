@@ -27,11 +27,22 @@ public class G_Seat : MonoBehaviourPun
     }
 
     //주문서 생성
-    public void InstantiateOrderPaper()
+    public void DoOrder()
     {
-        G_OrderPaper orderPaper = PhotonNetwork.Instantiate("OrderPaper", orderPaperTransform.position, orderPaperTransform.rotation).GetComponent<G_OrderPaper>();
-        //주문서 변수 할당
-        orderPaper.SetOrderNumber(seatNumber, this);
+        if(PhotonNetwork.IsMasterClient)
+        {
+            G_OrderPaper orderPaper = PhotonNetwork.Instantiate("OrderPaper", orderPaperTransform.position, orderPaperTransform.rotation).GetComponent<G_OrderPaper>();
+            //photonView.RPC(nameof(InstantiateOrderPaper), RpcTarget.AllBuffered, seatNumber, gameObject, orderPaper);
+            orderPaper.SetOrderNumber(seatNumber, this);
+        }
+    }
+
+    [PunRPC]
+    public void InstantiateOrderPaper(int seatNumber, GameObject s, G_OrderPaper o)
+    {
+        G_Seat seat = s.GetComponent<G_Seat>();
+        G_OrderPaper orderPaper = o.GetComponent<G_OrderPaper>();
+        orderPaper.SetOrderNumber(seatNumber, seat);
     }
 
     public void TakeOrderPaper()

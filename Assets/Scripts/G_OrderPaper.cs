@@ -41,6 +41,7 @@ public class G_OrderPaper : MonoBehaviourPun
             if (PhotonNetwork.IsMasterClient)
             {
                 G_Tray tray = PhotonNetwork.Instantiate("Tray", trayTransforms[orderNumber - 1].position, trayTransforms[orderNumber - 1].rotation).GetComponent<G_Tray>();
+                //photonView.RPC(nameof(SpawnTray), RpcTarget.AllBuffered, trayTransforms, tray);
                 tray.SetTrayNumber(orderNumber, mySeat);
                 mySeat.TakeOrderPaper();
             }
@@ -48,5 +49,12 @@ public class G_OrderPaper : MonoBehaviourPun
             Destroy(gameObject);
         }
 
+    }
+
+    [PunRPC]
+    public void SpawnTray(Transform[] trayTransforms, G_Tray tray)
+    {
+        tray.SetTrayNumber(orderNumber, mySeat);
+        mySeat.TakeOrderPaper();
     }
 }

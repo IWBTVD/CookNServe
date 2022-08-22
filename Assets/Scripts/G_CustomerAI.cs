@@ -29,7 +29,7 @@ public class G_CustomerAI : MonoBehaviour
     private CapsuleCollider capsuleCollider;
     private Rigidbody rigid;
 
-    private G_Seat mySeat;  //내 좌석 스크립트
+    public G_Seat mySeat;  //내 좌석 스크립트
     public G_CustomerGroup myGroup; //내 그룹 스크립트
 
     private bool isLeaderSit = false;
@@ -135,7 +135,7 @@ public class G_CustomerAI : MonoBehaviour
             state = State.ReadyToOrder;
             //리더면 주문서 생성
             if(isLeader)
-                mySeat.InstantiateOrderPaper();
+                mySeat.DoOrder();
         }
     }
 
