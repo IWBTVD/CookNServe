@@ -27,6 +27,6 @@ public class PlayerSpawner : MonoBehaviourPunCallbacks
 
     public void SpawnPlayer()
     {
-        spawnedPlayerPrefab = PhotonNetwork.Instantiate("OVRPlayerController", transform.position, transform.rotation);
+        spawnedPlayerPrefab = PhotonNetwork.Instantiate("Player", transform.position, transform.rotation);
     }
 }
