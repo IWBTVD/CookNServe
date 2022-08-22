@@ -14,6 +14,8 @@ public class G_Hamburger : MonoBehaviourPun
     public BoxCollider triggerCollider;
     public TextMeshPro textMesh;
 
+    public int DishNumber;
+
     public bool isComplete = false;
 
     public HamburgerType hamburgerType;

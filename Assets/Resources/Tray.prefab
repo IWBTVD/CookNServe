@@ -884,7 +884,7 @@ MonoBehaviour:
   trayNumber: 0
   cola: {fileID: 196136065169944790}
   frenchFry: {fileID: 8934807797558379091}
-  menuMonitor: {fileID: 0}
+  menuMonitor: {fileID: 4181479960376870997}
   orderedHamburger: 0
 --- !u!114 &3736581429999006656
 MonoBehaviour:

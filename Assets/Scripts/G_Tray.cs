@@ -46,6 +46,7 @@ public class G_Tray : MonoBehaviourPun
 
         //트레이 번호는 매개변수값으로
         trayNumber = n;
+        GetComponentInChildren<G_Hamburger>().DishNumber = trayNumber;
         //트레이 깃발 글자 변경
         trayNumberText[0].text = trayNumber.ToString();
         trayNumberText[1].text = trayNumber.ToString();
@@ -73,6 +74,7 @@ public class G_Tray : MonoBehaviourPun
             //서빙 조건 만족
             if(isColaServed && isFrenchFryServed && isHamburgerServed && trayNumber == seat.seatNumber)
             {
+                menuMonitor.SetActive(false);
                 GetComponent<Rigidbody>().isKinematic = true;
                 seat.ServedFood(gameObject);
                 Destroy(gameObject);
