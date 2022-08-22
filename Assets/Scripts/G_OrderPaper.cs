@@ -38,9 +38,12 @@ public class G_OrderPaper : MonoBehaviourPun
 
             //주문서의 주문번호에 맞는 트레이 생성
             //int trayNum = collision.gameObject.GetComponent<G_OrderPaper>().orderNumber;
-            G_Tray tray = PhotonNetwork.Instantiate("Tray", trayTransforms[orderNumber - 1].position, trayTransforms[orderNumber - 1].rotation).GetComponent<G_Tray>();
-            tray.SetTrayNumber(orderNumber, mySeat);
-            mySeat.TakeOrderPaper();
+            if (PhotonNetwork.IsMasterClient)
+            {
+                G_Tray tray = PhotonNetwork.Instantiate("Tray", trayTransforms[orderNumber - 1].position, trayTransforms[orderNumber - 1].rotation).GetComponent<G_Tray>();
+                tray.SetTrayNumber(orderNumber, mySeat);
+                mySeat.TakeOrderPaper();
+            }
 
             Destroy(gameObject);
         }

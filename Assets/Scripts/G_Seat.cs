@@ -41,10 +41,13 @@ public class G_Seat : MonoBehaviourPun
 
     public void ServedFood(GameObject trayObject)
     {
-        foreach(Transform t in tableTransforms)
+        if(PhotonNetwork.IsMasterClient)
         {
-            Instantiate(trayObject, t.position, t.rotation);
-            myGroup.ServedFood();
+            foreach (Transform t in tableTransforms)
+            {
+                Instantiate(trayObject, t.position, t.rotation);
+                myGroup.ServedFood();
+            }
         }
     }
 
