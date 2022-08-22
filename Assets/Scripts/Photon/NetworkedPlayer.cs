@@ -30,6 +30,7 @@ public class NetworkedPlayer : MonoBehaviourPun, IPunObservable
         ovrPlayerController = GetComponentInChildren<OVRPlayerController>();
         ovrSceneSampleController = GetComponentInChildren<OVRSceneSampleController>();
 
+        ovrPlayerController.gameObject.SetActive(photonView.IsMine);
         ovrCameraRig.SetActive(photonView.IsMine);
         otherModel.SetActive(!photonView.IsMine);
 

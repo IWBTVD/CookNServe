@@ -61,6 +61,14 @@ public class OVRSceneSampleController : MonoBehaviour
     /// </summary>
     void Awake()
     {
+        
+    }
+
+    /// <summary>
+    /// Start this instance.
+    /// </summary>
+    void Start()
+    {
         // Find camera controller
         OVRCameraRig[] cameraControllers;
         cameraControllers = gameObject.GetComponentsInChildren<OVRCameraRig>();
@@ -94,13 +102,7 @@ public class OVRSceneSampleController : MonoBehaviour
         {
             playerController = playerControllers[0];
         }
-    }
 
-    /// <summary>
-    /// Start this instance.
-    /// </summary>
-    void Start()
-    {
         // Make sure to hide cursor
         if (Application.isEditor == false)
         {
