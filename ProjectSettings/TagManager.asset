@@ -19,6 +19,7 @@ TagManager:
   - Tray
   - RoomLight
   - Seat
+  - Socket
   layers:
   - Default
   - TransparentFX

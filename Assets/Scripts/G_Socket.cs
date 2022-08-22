@@ -47,7 +47,7 @@ public class G_Socket : MonoBehaviourPun
                 {
                     rig.constraints = RigidbodyConstraints.None;
                 }
-
+                Target.transform.parent = null;
                 wasInSoket = false;
             }
 

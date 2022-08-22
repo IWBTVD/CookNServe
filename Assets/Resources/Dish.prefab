@@ -738,6 +738,10 @@ MonoBehaviour:
   ingredientSound: {fileID: 0}
   triggerCollider: {fileID: 2033300073}
   textMesh: {fileID: 8181856222732670478}
+  dishNumberTexts:
+  - {fileID: 6624386593292083537}
+  - {fileID: 2531215201008058904}
+  dishNumber: 0
   isComplete: 0
   hamburgerType: 0
 --- !u!65 &2033300073
@@ -878,7 +882,7 @@ MonoBehaviour:
   Group: 0
   prefixField: -1
   Synchronization: 3
-  OwnershipTransfer: 0
+  OwnershipTransfer: 1
   observableSearch: 2
   ObservedComponents:
   - {fileID: 821165199829736628}

@@ -974,7 +974,7 @@ Transform:
   m_GameObject: {fileID: 4181479960376870997}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0.0138, y: 0.3, z: 0.184}
-  m_LocalScale: {x: 0.45230982, y: 0.45230982, z: -0.003759509}
+  m_LocalScale: {x: 0.45230982, y: 0.45230982, z: 0.003}
   m_Children:
   - {fileID: 5226670044751565224}
   - {fileID: 574607620125082566}
@@ -1497,7 +1497,7 @@ GameObject:
   - component: {fileID: 2508048257028693253}
   m_Layer: 0
   m_Name: DishSocket
-  m_TagString: Untagged
+  m_TagString: Socket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -6,6 +6,9 @@ using TMPro;
 
 public class G_Hamburger : MonoBehaviourPun
 {
+    private Rigidbody rigid;
+    private G_PhotonGrabbable grabbable;
+
     //재료를 담는 리스트
     public List<IngredientType> stackedIngredients = new List<IngredientType>();
     
@@ -14,16 +17,28 @@ public class G_Hamburger : MonoBehaviourPun
     public BoxCollider triggerCollider;
     public TextMeshPro textMesh;
 
-    public int DishNumber;
+    public TextMeshPro[] dishNumberTexts;
+
+    public int dishNumber;
 
     public bool isComplete = false;
 
     public HamburgerType hamburgerType;
 
     private void Start() {
+        rigid = GetComponent<Rigidbody>();
+        grabbable = GetComponent<G_PhotonGrabbable>();
         ingredientSound = GetComponent<Y_IngredientSound>();
 
         textMesh.gameObject.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if (transform.parent == null && !grabbable.isGrabbed)
+        {
+            rigid.isKinematic = false;
+        }            
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,10 +47,12 @@ public class G_Hamburger : MonoBehaviourPun
         {
            ingredientSound.playSound();
         }
-        if(other.gameObject.tag == "Tray")
-        {
-            
-        }
+
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+
     }
 
     public void StackIngredient(GameObject meshObject, float height, IngredientType ingredientType)
@@ -83,5 +100,14 @@ public class G_Hamburger : MonoBehaviourPun
             textMesh.gameObject.SetActive(false);
         }
 
+    }
+
+    public void SetDishNumber(int n)
+    {
+        dishNumber = n;
+        foreach(TextMeshPro t in dishNumberTexts)
+        {
+            t.text = n.ToString();
+        }
     }
 }
