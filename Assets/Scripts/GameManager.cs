@@ -21,9 +21,6 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
     //        return instance;
     //    }
     //}
-
-    public UnityEvent onGameStart;
-
     private string gameVersion = "1"; // 같은 버전끼리 매칭하기 위해 string 사용 숫자뿐만 아닌 다른 것도 사용 가능
 
     public PlayerSpawner playerSpawner;
@@ -31,6 +28,8 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
     public G_Seat[] seatArray;
 
     public GameObject[] ActiveWhenGameStart;
+
+    public Transform customerSpawnZone;
 
     private void Start()
     {
@@ -86,6 +85,7 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
             g.SetActive(true);
         }
 
-        //PhotonNetwork.Instantiate("CustomerGroup", );
+        PhotonNetwork.Instantiate("CustomerGroup", customerSpawnZone.position, Quaternion.identity);
+        PhotonNetwork.Instantiate("CustomerGroup", customerSpawnZone.position, Quaternion.identity);
     }
 }

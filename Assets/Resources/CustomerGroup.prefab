@@ -282,6 +282,7 @@ MonoBehaviour:
   - {fileID: 1874180637061559735}
   stateTimer: 0
   satisfaction: 120
+  satisfactionText: {fileID: 0}
 --- !u!114 &2520266901014242819
 MonoBehaviour:
   m_ObjectHideFlags: 0
