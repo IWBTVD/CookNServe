@@ -43,8 +43,8 @@ public class G_Fryer : MonoBehaviourPun
             {
                 if (!f)
                 {
-                    fries[i] = Instantiate(fryPrefab, spawnPoint[i].position, spawnPoint[i].rotation);
-                    //fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
+                    //fries[i] = Instantiate(fryPrefab, spawnPoint[i].position, spawnPoint[i].rotation);
+                    fries[i] = PhotonNetwork.Instantiate("FrenchFries", spawnPoint[i].position, spawnPoint[i].rotation);
                     fries[i].transform.parent = transform;
                     fries[i].GetComponent<G_FrenchFry>().myNumber = i;
                 }

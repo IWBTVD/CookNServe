@@ -40,25 +40,25 @@ public class G_IngredientSpawner : MonoBehaviourPun
             {
                 if (!obj)
                 {
-                    //string packName;
-                    //switch (i)
-                    //{
-                    //    case 0: packName = "IngredientTray Cabbage"; break;
-                    //    case 1: packName = "IngredientTray Cabbage"; break;
-                    //    case 2: packName = "IngredientTray Cheese"; break;
-                    //    case 3: packName = "IngredientTray Cheese"; break;
-                    //    case 4: packName = "IngredientTray Cutlet"; break;
-                    //    case 5: packName = "IngredientTray Cutlet"; break;
-                    //    case 6: packName = "IngredientTray Mushroom"; break;
-                    //    case 7: packName = "IngredientTray Mushroom"; break;
-                    //    case 8: packName = "IngredientTray Tomato"; break;
-                    //    case 9: packName = "IngredientTray Tomato"; break;
-                    //    default: packName = "IngredientTray Cabbage"; break;
-                    //}
+                    string packName;
+                    switch (i)
+                    {
+                        case 0: packName = "IngredientTray Cabbage"; break;
+                        case 1: packName = "IngredientTray Cabbage"; break;
+                        case 2: packName = "IngredientTray Cheese"; break;
+                        case 3: packName = "IngredientTray Cheese"; break;
+                        case 4: packName = "IngredientTray Cutlet"; break;
+                        case 5: packName = "IngredientTray Cutlet"; break;
+                        case 6: packName = "IngredientTray Mushroom"; break;
+                        case 7: packName = "IngredientTray Mushroom"; break;
+                        case 8: packName = "IngredientTray Tomato"; break;
+                        case 9: packName = "IngredientTray Tomato"; break;
+                        default: packName = "IngredientTray Cabbage"; break;
+                    }
 
-                    //IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
+                    IngredientPacks[i] = PhotonNetwork.Instantiate(packName, spawnTransforms[i].position, Quaternion.identity);
 
-                    IngredientPacks[i] = Instantiate(prefabs[i/2], spawnTransforms[i].position, Quaternion.identity);
+                    //IngredientPacks[i] = Instantiate(prefabs[i/2], spawnTransforms[i].position, Quaternion.identity);
                     IngredientPacks[i].transform.parent = transform;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().myNumber = i;
                     IngredientPacks[i].GetComponent<G_IngredientPack>().isCreated = true;

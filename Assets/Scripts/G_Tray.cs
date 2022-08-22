@@ -16,6 +16,8 @@ public class G_Tray : MonoBehaviourPun
     public GameObject cola;
     public GameObject frenchFry;
 
+    public GameObject menuMonitor;
+
     public HamburgerType orderedHamburger;
 
     private G_Seat mySeat;
@@ -37,7 +39,11 @@ public class G_Tray : MonoBehaviourPun
     public void SetTrayNumber(int n, G_Seat seat)
     {
         //햄버거 랜덤으로 선정
-        orderedHamburger = (HamburgerType)Random.Range(1, 2);
+        //orderedHamburger = (HamburgerType)Random.Range(1, 2);
+
+        //테스트용
+        orderedHamburger = (HamburgerType)n;
+
         //트레이 번호는 매개변수값으로
         trayNumber = n;
         //트레이 깃발 글자 변경
@@ -67,22 +73,24 @@ public class G_Tray : MonoBehaviourPun
             //서빙 조건 만족
             if(isColaServed && isFrenchFryServed && isHamburgerServed && trayNumber == seat.seatNumber)
             {
+                GetComponent<Rigidbody>().isKinematic = true;
                 seat.ServedFood(gameObject);
+                Destroy(gameObject);
             }
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        if(collision.transform.tag == "Hamburger")
-        {
-            //그릇 제거하면 안되게만들어야댐
-            if (collision.gameObject.GetComponent<G_Hamburger>().hamburgerType == orderedHamburger)
-            {
-                isHamburgerServed = false;
-                SetTrayText();
-            }
-        }
+        //if(collision.transform.tag == "Hamburger")
+        //{
+        //    //그릇 제거하면 안되게만들어야댐
+        //    if (collision.gameObject.GetComponent<G_Hamburger>().hamburgerType == orderedHamburger)
+        //    {
+        //        isHamburgerServed = false;
+        //        SetTrayText();
+        //    }
+        //}
         
     }
 
@@ -100,13 +108,6 @@ public class G_Tray : MonoBehaviourPun
         isFrenchFryServed = true;
         SetTrayText();
     }
-
-    [PunRPC]
-    public void PlaceHamburger(bool b)
-    {
-        isHamburgerServed = b;
-        SetTrayText();
-    }
     
     public void SetTrayText()
     {
@@ -117,11 +118,19 @@ public class G_Tray : MonoBehaviourPun
         trayOrderText[3].text = orderDetailText;
     }
 
-    public void ReceiveHamburger(HamburgerType hamburgerType)
+    public void ReceiveHamburger(GameObject obj)
     {
-        if(orderedHamburger == hamburgerType)
+        G_Hamburger h = obj.GetComponentInChildren<G_Hamburger>();
+        if(orderedHamburger == h.hamburgerType)
         {
             photonView.RPC(nameof(PlaceHamburger), RpcTarget.AllBuffered, true);
         }
+    }
+
+    [PunRPC]
+    public void PlaceHamburger(bool b)
+    {
+        isHamburgerServed = b;
+        SetTrayText();
     }
 }

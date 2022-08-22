@@ -5,14 +5,12 @@ using UnityEngine;
 public class G_StartBtn : MonoBehaviour
 {
     G_PhotonGrabbable grabbable;
-    GameManager gameManager;
+    public GameManager gameManager;
 
     // Start is called before the first frame update
     void Start()
     {
         grabbable = GetComponent<G_PhotonGrabbable>();
-        gameManager = GetComponent<GameManager>();
-
     }
 
     // Update is called once per frame
@@ -21,6 +19,7 @@ public class G_StartBtn : MonoBehaviour
         if(grabbable.isGrabbed)
         {
             gameManager.StartGame();
+            Destroy(gameObject);
         }
     }
 }

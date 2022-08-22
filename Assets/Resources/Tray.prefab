@@ -884,6 +884,7 @@ MonoBehaviour:
   trayNumber: 0
   cola: {fileID: 196136065169944790}
   frenchFry: {fileID: 8934807797558379091}
+  menuMonitor: {fileID: 0}
   orderedHamburger: 0
 --- !u!114 &3736581429999006656
 MonoBehaviour:
@@ -958,7 +959,7 @@ GameObject:
   - component: {fileID: 2717936562900504265}
   - component: {fileID: 6797661942780539514}
   m_Layer: 0
-  m_Name: MenuCanvas
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,7 +1542,7 @@ MonoBehaviour:
   SelectExit:
     m_PersistentCalls:
       m_Calls: []
-  isTraySocket: 0
+  isTraySocket: 1
 --- !u!65 &2508048257028693253
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1902,6 +1903,14 @@ PrefabInstance:
     - target: {fileID: 1947015919005934596, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863828726054020403, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_IsKinematic
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7863828726054020403, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7863828726054020406, guid: 5e162bfbe3e79df4ab6b75ca9ff05630, type: 3}
       propertyPath: m_RootOrder

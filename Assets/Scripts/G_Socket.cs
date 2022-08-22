@@ -114,7 +114,7 @@ public class G_Socket : MonoBehaviourPun
 
             //Replace all Materials with the hover Material
             MeshRenderer[] ren;
-            ren = hoverObject.GetComponents<MeshRenderer>();
+            ren = hoverObject.GetComponentsInChildren<MeshRenderer>();
             foreach (MeshRenderer rend in ren)
             {
                 var mats = new Material[rend.materials.Length];
@@ -161,6 +161,6 @@ public class G_Socket : MonoBehaviourPun
     {
         G_Tray tray = GetComponentInParent<G_Tray>();
 
-        tray.ReceiveHamburger(obj.GetComponent<G_Hamburger>().hamburgerType);
+        tray.ReceiveHamburger(obj);
     }
 }

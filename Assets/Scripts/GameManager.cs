@@ -85,5 +85,7 @@ public class GameManager : MonoBehaviourPunCallbacks // PUN 구현할때 overrid
         {
             g.SetActive(true);
         }
+
+        //PhotonNetwork.Instantiate("CustomerGroup", );
     }
 }
