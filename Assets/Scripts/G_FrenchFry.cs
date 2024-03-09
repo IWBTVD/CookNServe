@@ -39,4 +39,6 @@ public class G_FrenchFry : MonoBehaviour
         if (collision.transform.tag == "Tray")
             Destroy(gameObject);
     }
+
+
 }
